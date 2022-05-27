@@ -8761,10 +8761,10 @@ Created 2016-06-07, Hans Locher&lt;br&gt;
 <part name="U$3" library="mylib" deviceset="SMD_PIN" device=""/>
 <part name="U$4" library="mylib" deviceset="SMD_PIN" device=""/>
 <part name="U$5" library="mylib" deviceset="SMD_PIN" device=""/>
-<part name="U$6" library="mylib" deviceset="SMD_PIN" device=""/>
-<part name="U$7" library="mylib" deviceset="SMD_PIN" device=""/>
+<part name="FMI" library="mylib" deviceset="SMD_PIN" device=""/>
+<part name="GND" library="mylib" deviceset="SMD_PIN" device=""/>
 <part name="U$8" library="mylib" deviceset="SMD_PIN" device=""/>
-<part name="U$9" library="mylib" deviceset="SMD_PIN" device=""/>
+<part name="AMI" library="mylib" deviceset="SMD_PIN" device=""/>
 <part name="U$10" library="mylib" deviceset="SMD_PIN" device=""/>
 <part name="U$11" library="mylib" deviceset="SMD_PIN" device=""/>
 <part name="U$12" library="mylib" deviceset="SMD_PIN" device=""/>
@@ -8890,10 +8890,10 @@ Created 2016-06-07, Hans Locher&lt;br&gt;
 <instance part="U$3" gate="G$1" x="15.24" y="58.42" smashed="yes"/>
 <instance part="U$4" gate="G$1" x="15.24" y="55.88" smashed="yes"/>
 <instance part="U$5" gate="G$1" x="15.24" y="53.34" smashed="yes"/>
-<instance part="U$6" gate="G$1" x="15.24" y="45.72" smashed="yes"/>
-<instance part="U$7" gate="G$1" x="15.24" y="43.18" smashed="yes"/>
+<instance part="FMI" gate="G$1" x="15.24" y="45.72" smashed="yes"/>
+<instance part="GND" gate="G$1" x="15.24" y="43.18" smashed="yes"/>
 <instance part="U$8" gate="G$1" x="15.24" y="40.64" smashed="yes"/>
-<instance part="U$9" gate="G$1" x="15.24" y="38.1" smashed="yes"/>
+<instance part="AMI" gate="G$1" x="15.24" y="38.1" smashed="yes"/>
 <instance part="U$10" gate="G$1" x="73.66" y="96.52" smashed="yes" rot="R270"/>
 <instance part="U$11" gate="G$1" x="76.2" y="96.52" smashed="yes" rot="R270"/>
 <instance part="U$12" gate="G$1" x="152.4" y="63.5" smashed="yes" rot="R180"/>
@@ -8959,7 +8959,7 @@ Created 2016-06-07, Hans Locher&lt;br&gt;
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="27.94" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
 <junction x="22.86" y="43.18"/>
-<pinref part="U$7" gate="G$1" pin="P$1"/>
+<pinref part="GND" gate="G$1" pin="P$1"/>
 <pinref part="U$8" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
@@ -9177,7 +9177,7 @@ Created 2016-06-07, Hans Locher&lt;br&gt;
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="45.72" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="P$1"/>
+<pinref part="FMI" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -9200,7 +9200,7 @@ Created 2016-06-07, Hans Locher&lt;br&gt;
 <wire x1="35.56" y1="35.56" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="35.56" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="38.1" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="P$1"/>
+<pinref part="AMI" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$18" class="0">
