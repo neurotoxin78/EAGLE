@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="no"/>
@@ -10288,6 +10288,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="154.12" y1="68.4" x2="157.56" y2="68.4" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="P$1"/>
+<pinref part="SUPPLY23" gate="GND" pin="GND"/>
+<wire x1="167.66" y1="29.68" x2="167.66" y2="37.86" width="0.1524" layer="91"/>
+<wire x1="167.66" y1="37.86" x2="167.46" y2="37.86" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RF_INPUT" class="0">
 <segment>
@@ -10328,19 +10334,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="CLK" gate="G$1" pin="P$1"/>
 <wire x1="76.2" y1="83.82" x2="76.2" y2="78.74" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 <label x="76.2" y="86.36" size="1.778" layer="95" rot="R90" align="center-left" grouprefs="DOUBLE_CONVERSION_MIXER"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="OSCILLATOR_1"/>
-<pinref part="Q1" gate="G$1" pin="1"/>
-<wire x1="187.18" y1="48.26" x2="182.1" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="182.1" y1="48.26" x2="166.86" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
-<wire x1="182.1" y1="50.8" x2="182.1" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
-<junction x="182.1" y="48.26" grouprefs="DOUBLE_CONVERSION_MIXER"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="182.1" y1="43.18" x2="182.1" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -10429,6 +10422,25 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="IC2" gate="G$1" pin="INPUT_A"/>
 <wire x1="110.2" y1="53.4" x2="123.68" y2="53.4" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 <wire x1="123.68" y1="53.4" x2="123.68" y2="53.34" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$1"/>
+<wire x1="174.45" y1="29.68" x2="174.46" y2="29.68" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="OSCILLATOR_1"/>
+<pinref part="Q1" gate="G$1" pin="1"/>
+<wire x1="187.18" y1="48.26" x2="182.1" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="182.1" y1="48.26" x2="166.86" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="182.1" y1="50.8" x2="182.1" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<junction x="182.1" y="48.26" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="182.1" y1="43.18" x2="182.1" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="174.46" y1="29.68" x2="174.46" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="174.46" y1="48.26" x2="166.86" y2="48.26" width="0.1524" layer="91"/>
+<junction x="174.46" y="29.68"/>
+<junction x="174.46" y="48.26"/>
 </segment>
 </net>
 </nets>

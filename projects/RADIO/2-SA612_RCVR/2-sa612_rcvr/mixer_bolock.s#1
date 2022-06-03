@@ -8156,9 +8156,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="0" y1="7" x2="8" y2="7" width="0.127" layer="21"/>
 <wire x1="8" y1="7" x2="8" y2="0" width="0.127" layer="21"/>
 <wire x1="8" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="OUT" x="1.9" y="1.4" drill="0.8" diameter="1.6"/>
-<pad name="IN" x="6" y="5.7" drill="0.8" diameter="1.6"/>
-<pad name="GND" x="3.4" y="5.7" drill="0.8" diameter="1.6"/>
+<pad name="OUT" x="1.9" y="1.4" drill="0.8" diameter="2"/>
+<pad name="IN" x="6" y="5.7" drill="0.8" diameter="2"/>
+<pad name="GND" x="3.4" y="5.7" drill="0.8" diameter="2"/>
 </package>
 <package name="ZTBF455E">
 <wire x1="0" y1="0" x2="0" y2="8.6" width="0.127" layer="21"/>

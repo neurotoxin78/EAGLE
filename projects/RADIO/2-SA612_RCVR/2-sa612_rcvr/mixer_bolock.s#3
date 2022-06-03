@@ -9975,7 +9975,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="470R"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="10pF"/>
-<part name="CLK" library="mylib" deviceset="SMD_PIN" device=""/>
+<part name="VFI" library="mylib" deviceset="SMD_PIN" device=""/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="470pF"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="470pF"/>
 <part name="Q1" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC18U-V" package3d_urn="urn:adsk.eagle:package:12082/1"/>
@@ -10013,7 +10013,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C10" library="rcl" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="100nF"/>
 <part name="SUPPLY21" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY22" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="U$1" library="mylib" deviceset="SMD_PIN" device=""/>
+<part name="BFI" library="mylib" deviceset="SMD_PIN" device=""/>
 <part name="U$2" library="mylib" deviceset="SMD_PIN" device=""/>
 <part name="SUPPLY23" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
@@ -10059,7 +10059,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="74.676" y="60.579" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="74.676" y="65.659" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="CLK" gate="G$1" x="76.2" y="83.82" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<instance part="VFI" gate="G$1" x="76.2" y="83.82" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 <instance part="C4" gate="G$1" x="182.1" y="55.88" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="183.624" y="56.261" size="1.778" layer="95"/>
 <attribute name="VALUE" x="183.624" y="51.181" size="1.778" layer="96"/>
@@ -10169,7 +10169,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SUPPLY22" gate="GND" x="151.58" y="68.4" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="148.405" y="70.305" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="U$1" gate="G$1" x="174.46" y="29.68" smashed="yes" rot="R90"/>
+<instance part="BFI" gate="G$1" x="174.46" y="29.68" smashed="yes" rot="R90"/>
 <instance part="U$2" gate="G$1" x="167.66" y="29.68" smashed="yes" rot="R90"/>
 <instance part="SUPPLY23" gate="GND" x="167.46" y="40.4" smashed="yes" rot="R180">
 <attribute name="VALUE" x="169.365" y="43.575" size="1.778" layer="96" rot="R180"/>
@@ -10328,10 +10328,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="76.2" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
-<net name="CLK0" class="0">
+<net name="VFI" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="CLK" gate="G$1" pin="P$1"/>
+<pinref part="VFI" gate="G$1" pin="P$1"/>
 <wire x1="76.2" y1="83.82" x2="76.2" y2="78.74" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 <label x="76.2" y="86.36" size="1.778" layer="95" rot="R90" align="center-left" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
@@ -10424,9 +10424,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="123.68" y1="53.4" x2="123.68" y2="53.34" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="BFI" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="P$1"/>
+<pinref part="BFI" gate="G$1" pin="P$1"/>
 <wire x1="174.45" y1="29.68" x2="174.46" y2="29.68" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="OSCILLATOR_1"/>
 <pinref part="Q1" gate="G$1" pin="1"/>

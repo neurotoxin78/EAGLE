@@ -9960,6 +9960,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
+<groups>
+<schematic_group name="DOUBLE_CONVERSION_MIXER"/>
+</groups>
 <parts>
 <part name="IC1" library="SA612AN_01_112" deviceset="SA612AN_01,112" device=""/>
 <part name="IC2" library="SA612AN_01_112" deviceset="SA612AN_01,112" device=""/>
@@ -10016,151 +10019,151 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <plain>
 </plain>
 <instances>
-<instance part="IC1" gate="G$1" x="20.32" y="53.34" smashed="yes">
+<instance part="IC1" gate="G$1" x="20.32" y="53.34" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="41.91" y="60.96" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="34.29" y="58.42" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="IC2" gate="G$1" x="123.68" y="53.34" smashed="yes">
+<instance part="IC2" gate="G$1" x="123.68" y="53.34" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="145.27" y="60.96" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="135.11" y="58.42" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="C1" gate="G$1" x="-2.54" y="50.8" smashed="yes" rot="R90">
+<instance part="C1" gate="G$1" x="-2.54" y="50.8" smashed="yes" rot="R90" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="-2.921" y="52.324" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="2.159" y="52.324" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY1" gate="GND" x="-12.7" y="50.8" smashed="yes" rot="R270">
+<instance part="SUPPLY1" gate="GND" x="-12.7" y="50.8" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="-15.875" y="52.705" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="IN" gate="G$1" x="-17.78" y="58.42" smashed="yes"/>
-<instance part="SUPPLY2" gate="GND" x="88.99" y="30.4" smashed="yes">
+<instance part="IN" gate="G$1" x="-17.78" y="58.42" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<instance part="SUPPLY2" gate="GND" x="88.99" y="30.4" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="87.085" y="27.225" size="1.778" layer="96"/>
 </instance>
-<instance part="C2" gate="G$1" x="15.24" y="35.56" smashed="yes" rot="R180">
+<instance part="C2" gate="G$1" x="15.24" y="35.56" smashed="yes" rot="R180" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="13.716" y="35.179" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="13.716" y="40.259" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SUPPLY3" gate="GND" x="15.24" y="27.94" smashed="yes">
+<instance part="SUPPLY3" gate="GND" x="15.24" y="27.94" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="13.335" y="24.765" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY4" gate="GND" x="5.08" y="27.94" smashed="yes">
+<instance part="SUPPLY4" gate="GND" x="5.08" y="27.94" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="3.175" y="24.765" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="76.2" y="73.66" smashed="yes" rot="R90">
+<instance part="R1" gate="G$1" x="76.2" y="73.66" smashed="yes" rot="R90" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="74.7014" y="69.85" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="79.502" y="69.85" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C3" gate="G$1" x="76.2" y="60.96" smashed="yes" rot="R180">
+<instance part="C3" gate="G$1" x="76.2" y="60.96" smashed="yes" rot="R180" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="74.676" y="60.579" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="74.676" y="65.659" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="CLK" gate="G$1" x="76.2" y="83.82" smashed="yes" rot="R270"/>
-<instance part="C4" gate="G$1" x="182.1" y="55.88" smashed="yes">
+<instance part="CLK" gate="G$1" x="76.2" y="83.82" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<instance part="C4" gate="G$1" x="182.1" y="55.88" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="183.624" y="56.261" size="1.778" layer="95"/>
 <attribute name="VALUE" x="183.624" y="51.181" size="1.778" layer="96"/>
 </instance>
-<instance part="C5" gate="G$1" x="182.1" y="40.64" smashed="yes">
+<instance part="C5" gate="G$1" x="182.1" y="40.64" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="183.624" y="41.021" size="1.778" layer="95"/>
 <attribute name="VALUE" x="183.624" y="35.941" size="1.778" layer="96"/>
 </instance>
-<instance part="Q1" gate="G$1" x="189.72" y="48.26" smashed="yes">
+<instance part="Q1" gate="G$1" x="189.72" y="48.26" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="192.26" y="49.276" size="1.778" layer="95"/>
 <attribute name="VALUE" x="192.26" y="45.72" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY5" gate="GND" x="197.34" y="48.26" smashed="yes" rot="R90">
+<instance part="SUPPLY5" gate="GND" x="197.34" y="48.26" smashed="yes" rot="R90" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="200.515" y="46.355" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY6" gate="GND" x="182.1" y="30.48" smashed="yes">
+<instance part="SUPPLY6" gate="GND" x="182.1" y="30.48" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="180.195" y="27.305" size="1.778" layer="96"/>
 </instance>
-<instance part="C6" gate="G$1" x="118.6" y="30.48" smashed="yes">
+<instance part="C6" gate="G$1" x="118.6" y="30.48" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="120.124" y="30.861" size="1.778" layer="95"/>
 <attribute name="VALUE" x="120.124" y="25.781" size="1.778" layer="96"/>
 </instance>
-<instance part="OUT" gate="G$1" x="118.6" y="17.78" smashed="yes" rot="R90"/>
-<instance part="SUPPLY7" gate="GND" x="113.52" y="48.26" smashed="yes" rot="R270">
+<instance part="OUT" gate="G$1" x="118.6" y="17.78" smashed="yes" rot="R90" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<instance part="SUPPLY7" gate="GND" x="113.52" y="48.26" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="110.345" y="50.165" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C7" gate="G$1" x="131.3" y="35.56" smashed="yes" rot="R270">
+<instance part="C7" gate="G$1" x="131.3" y="35.56" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="131.681" y="34.036" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="126.601" y="34.036" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SUPPLY8" gate="GND" x="141.46" y="35.56" smashed="yes" rot="R90">
+<instance part="SUPPLY8" gate="GND" x="141.46" y="35.56" smashed="yes" rot="R90" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="144.635" y="33.655" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C8" gate="G$1" x="118.6" y="66.04" smashed="yes">
+<instance part="C8" gate="G$1" x="118.6" y="66.04" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="120.124" y="66.421" size="1.778" layer="95"/>
 <attribute name="VALUE" x="120.124" y="61.341" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY9" gate="GND" x="118.6" y="76.2" smashed="yes" rot="R180">
+<instance part="SUPPLY9" gate="GND" x="118.6" y="76.2" smashed="yes" rot="R180" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="120.505" y="79.375" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SUPPLY10" gate="G$1" x="68.58" y="81.28" smashed="yes">
+<instance part="SUPPLY10" gate="G$1" x="68.58" y="81.28" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="68.58" y="84.074" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY11" gate="G$1" x="169.4" y="76.2" smashed="yes">
+<instance part="SUPPLY11" gate="G$1" x="169.4" y="76.2" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="169.4" y="78.994" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="U$4" gate="G$1" x="-17.78" y="66.04" smashed="yes"/>
-<instance part="SUPPLY12" gate="GND" x="-2.54" y="66.04" smashed="yes" rot="R90">
+<instance part="U$4" gate="G$1" x="-17.78" y="66.04" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<instance part="SUPPLY12" gate="GND" x="-2.54" y="66.04" smashed="yes" rot="R90" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="0.635" y="64.135" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$5" gate="G$1" x="128.76" y="17.78" smashed="yes" rot="R90"/>
-<instance part="SUPPLY13" gate="GND" x="128.76" y="25.4" smashed="yes" rot="R180">
+<instance part="U$5" gate="G$1" x="128.76" y="17.78" smashed="yes" rot="R90" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<instance part="SUPPLY13" gate="GND" x="128.76" y="25.4" smashed="yes" rot="R180" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="130.665" y="28.575" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$6" gate="G$1" x="83.82" y="83.82" smashed="yes" rot="R270"/>
-<instance part="SUPPLY14" gate="GND" x="83.82" y="71.12" smashed="yes">
+<instance part="U$6" gate="G$1" x="83.82" y="83.82" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<instance part="SUPPLY14" gate="GND" x="83.82" y="71.12" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="81.915" y="67.945" size="1.778" layer="96"/>
 </instance>
-<instance part="U$7" gate="G$1" x="38.1" y="86.36" smashed="yes" rot="R270"/>
-<instance part="SUPPLY15" gate="GND" x="38.1" y="78.74" smashed="yes">
+<instance part="U$7" gate="G$1" x="38.1" y="86.36" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<instance part="SUPPLY15" gate="GND" x="38.1" y="78.74" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="36.195" y="75.565" size="1.778" layer="96"/>
 </instance>
-<instance part="+5" gate="G$1" x="30.48" y="86.36" smashed="yes" rot="R270"/>
-<instance part="SUPPLY16" gate="G$1" x="30.48" y="81.28" smashed="yes" rot="R180">
+<instance part="+5" gate="G$1" x="30.48" y="86.36" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<instance part="SUPPLY16" gate="G$1" x="30.48" y="81.28" smashed="yes" rot="R180" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="30.48" y="78.486" size="1.778" layer="96" rot="R180" align="bottom-center"/>
 </instance>
-<instance part="U$9" gate="G$1" x="83.96" y="49.75" smashed="yes"/>
-<instance part="H1" gate="G$1" x="31.4" y="9.1" smashed="yes">
+<instance part="U$9" gate="G$1" x="83.96" y="49.75" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<instance part="H1" gate="G$1" x="31.4" y="9.1" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="34.194" y="9.6842" size="1.778" layer="95"/>
 <attribute name="VALUE" x="34.194" y="6.6362" size="1.778" layer="96"/>
 </instance>
-<instance part="H2" gate="G$1" x="45.4" y="9.2" smashed="yes">
+<instance part="H2" gate="G$1" x="45.4" y="9.2" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="48.194" y="9.7842" size="1.778" layer="95"/>
 <attribute name="VALUE" x="48.194" y="6.7362" size="1.778" layer="96"/>
 </instance>
-<instance part="H3" gate="G$1" x="61.5" y="9.2" smashed="yes">
+<instance part="H3" gate="G$1" x="61.5" y="9.2" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="64.294" y="9.7842" size="1.778" layer="95"/>
 <attribute name="VALUE" x="64.294" y="6.7362" size="1.778" layer="96"/>
 </instance>
-<instance part="H4" gate="G$1" x="81.3" y="9.1" smashed="yes">
+<instance part="H4" gate="G$1" x="81.3" y="9.1" smashed="yes" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="84.094" y="9.6842" size="1.778" layer="95"/>
 <attribute name="VALUE" x="84.094" y="6.6362" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY17" gate="GND" x="22.18" y="9.04" smashed="yes" rot="R270">
+<instance part="SUPPLY17" gate="GND" x="22.18" y="9.04" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="19.005" y="10.945" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SUPPLY18" gate="GND" x="39.08" y="9.24" smashed="yes" rot="R270">
+<instance part="SUPPLY18" gate="GND" x="39.08" y="9.24" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="35.905" y="11.145" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SUPPLY19" gate="GND" x="55.18" y="9.24" smashed="yes" rot="R270">
+<instance part="SUPPLY19" gate="GND" x="55.18" y="9.24" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="52.005" y="11.145" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SUPPLY20" gate="GND" x="74.87" y="9.05" smashed="yes" rot="R270">
+<instance part="SUPPLY20" gate="GND" x="74.87" y="9.05" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="71.695" y="10.955" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C9" gate="G$1" x="60.34" y="71" smashed="yes" rot="R270">
+<instance part="C9" gate="G$1" x="60.34" y="71" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="60.721" y="69.476" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="55.641" y="69.476" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C10" gate="G$1" x="162.64" y="68.4" smashed="yes" rot="R270">
+<instance part="C10" gate="G$1" x="162.64" y="68.4" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="NAME" x="163.021" y="66.876" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="157.941" y="66.876" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SUPPLY21" gate="GND" x="50.82" y="70.98" smashed="yes" rot="R270">
+<instance part="SUPPLY21" gate="GND" x="50.82" y="70.98" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="47.645" y="72.885" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SUPPLY22" gate="GND" x="151.58" y="68.4" smashed="yes" rot="R270">
+<instance part="SUPPLY22" gate="GND" x="151.58" y="68.4" smashed="yes" rot="R270" grouprefs="DOUBLE_CONVERSION_MIXER">
 <attribute name="VALUE" x="148.405" y="70.305" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
@@ -10171,253 +10174,253 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="IC1" gate="G$1" pin="INPUT_B"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="50.8" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="50.8" x2="20.32" y2="50.8" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<wire x1="-10.16" y1="50.8" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="50.8" x2="-5.08" y2="50.8" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
-<wire x1="15.24" y1="30.48" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="30.48" x2="15.24" y2="33.02" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
 <pinref part="IC1" gate="G$1" pin="GND"/>
-<wire x1="5.08" y1="30.48" x2="5.08" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="48.26" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="30.48" x2="5.08" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="5.08" y1="48.26" x2="20.32" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<wire x1="194.8" y1="48.26" x2="192.26" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="194.8" y1="48.26" x2="192.26" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
-<wire x1="182.1" y1="33.02" x2="182.1" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="182.1" y1="33.02" x2="182.1" y2="35.56" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<wire x1="116.06" y1="48.26" x2="123.68" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="116.06" y1="48.26" x2="123.68" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
-<wire x1="138.92" y1="35.56" x2="133.84" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="138.92" y1="35.56" x2="133.84" y2="35.56" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="1"/>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
-<wire x1="118.6" y1="73.66" x2="118.6" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="118.6" y1="73.66" x2="118.6" y2="68.58" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="P$1"/>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
-<wire x1="-5.08" y1="66.04" x2="-17.78" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="66.04" x2="-17.78" y2="66.04" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="P$1"/>
 <pinref part="SUPPLY13" gate="GND" pin="GND"/>
-<wire x1="128.76" y1="22.86" x2="128.76" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="128.76" y1="22.86" x2="128.76" y2="17.78" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="P$1"/>
 <pinref part="SUPPLY14" gate="GND" pin="GND"/>
-<wire x1="83.82" y1="73.66" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="73.66" x2="83.82" y2="83.82" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="U$7" gate="G$1" pin="P$1"/>
 <pinref part="SUPPLY15" gate="GND" pin="GND"/>
-<wire x1="38.1" y1="81.28" x2="38.1" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="81.28" x2="38.1" y2="86.36" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <pinref part="U$9" gate="G$1" pin="GND"/>
-<wire x1="88.99" y1="32.94" x2="88.97" y2="34.75" width="0.1524" layer="91"/>
-<wire x1="88.97" y1="34.75" x2="88.96" y2="34.75" width="0.1524" layer="91"/>
+<wire x1="88.99" y1="32.94" x2="88.97" y2="34.75" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="88.97" y1="34.75" x2="88.96" y2="34.75" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="H1" gate="G$1" pin="MOUNT"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
-<wire x1="28.86" y1="9.1" x2="28.88" y2="9.12" width="0.1524" layer="91"/>
-<wire x1="28.88" y1="9.12" x2="24.72" y2="9.04" width="0.1524" layer="91"/>
+<wire x1="28.86" y1="9.1" x2="28.88" y2="9.12" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="28.88" y1="9.12" x2="24.72" y2="9.04" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="SUPPLY18" gate="GND" pin="GND"/>
 <pinref part="H2" gate="G$1" pin="MOUNT"/>
-<wire x1="41.62" y1="9.24" x2="42.86" y2="9.24" width="0.1524" layer="91"/>
-<wire x1="42.86" y1="9.24" x2="42.86" y2="9.2" width="0.1524" layer="91"/>
+<wire x1="41.62" y1="9.24" x2="42.86" y2="9.24" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="42.86" y1="9.24" x2="42.86" y2="9.2" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="SUPPLY19" gate="GND" pin="GND"/>
 <pinref part="H3" gate="G$1" pin="MOUNT"/>
-<wire x1="57.72" y1="9.24" x2="58.96" y2="9.24" width="0.1524" layer="91"/>
-<wire x1="58.96" y1="9.24" x2="58.96" y2="9.2" width="0.1524" layer="91"/>
+<wire x1="57.72" y1="9.24" x2="58.96" y2="9.24" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="58.96" y1="9.24" x2="58.96" y2="9.2" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="SUPPLY20" gate="GND" pin="GND"/>
 <pinref part="H4" gate="G$1" pin="MOUNT"/>
-<wire x1="77.41" y1="9.05" x2="78.76" y2="9.05" width="0.1524" layer="91"/>
-<wire x1="78.76" y1="9.05" x2="78.76" y2="9.1" width="0.1524" layer="91"/>
+<wire x1="77.41" y1="9.05" x2="78.76" y2="9.05" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="78.76" y1="9.05" x2="78.76" y2="9.1" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="SUPPLY21" gate="GND" pin="GND"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="53.36" y1="70.98" x2="55.26" y2="70.98" width="0.1524" layer="91"/>
-<wire x1="55.26" y1="70.98" x2="55.26" y2="71" width="0.1524" layer="91"/>
+<wire x1="53.36" y1="70.98" x2="55.26" y2="70.98" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="55.26" y1="70.98" x2="55.26" y2="71" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="SUPPLY22" gate="GND" pin="GND"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="154.12" y1="68.4" x2="157.56" y2="68.4" width="0.1524" layer="91"/>
+<wire x1="154.12" y1="68.4" x2="157.56" y2="68.4" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="RF_INPUT" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="INPUT_A"/>
-<wire x1="20.32" y1="53.34" x2="7.62" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="53.34" x2="7.62" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="58.42" x2="-17.78" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="53.34" x2="7.62" y2="53.34" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="7.62" y1="53.34" x2="7.62" y2="58.42" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="7.62" y1="58.42" x2="-17.78" y2="58.42" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 <pinref part="IN" gate="G$1" pin="P$1"/>
-<label x="-33.02" y="58.42" size="1.778" layer="95" align="center-left"/>
+<label x="-33.02" y="58.42" size="1.778" layer="95" align="center-left" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="G$1" pin="OUTPUT_A"/>
-<wire x1="15.24" y1="40.64" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="45.72" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="40.64" x2="15.24" y2="45.72" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="15.24" y1="45.72" x2="20.32" y2="45.72" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="68.58" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="68.58" x2="76.2" y2="66.04" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="OSCILLATOR_1"/>
-<wire x1="76.2" y1="58.42" x2="76.2" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="58.42" x2="76.2" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="76.2" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="CLK0" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="CLK" gate="G$1" pin="P$1"/>
-<wire x1="76.2" y1="83.82" x2="76.2" y2="78.74" width="0.1524" layer="91"/>
-<label x="76.2" y="86.36" size="1.778" layer="95" rot="R90" align="center-left"/>
+<wire x1="76.2" y1="83.82" x2="76.2" y2="78.74" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<label x="76.2" y="86.36" size="1.778" layer="95" rot="R90" align="center-left" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="OSCILLATOR_1"/>
 <pinref part="Q1" gate="G$1" pin="1"/>
-<wire x1="187.18" y1="48.26" x2="182.1" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="187.18" y1="48.26" x2="182.1" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 <pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="182.1" y1="48.26" x2="166.86" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="182.1" y1="50.8" x2="182.1" y2="48.26" width="0.1524" layer="91"/>
-<junction x="182.1" y="48.26"/>
+<wire x1="182.1" y1="48.26" x2="166.86" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="182.1" y1="50.8" x2="182.1" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<junction x="182.1" y="48.26" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="182.1" y1="43.18" x2="182.1" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="182.1" y1="43.18" x2="182.1" y2="48.26" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="OSCILLATOR_2"/>
-<wire x1="166.86" y1="50.8" x2="177.02" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="177.02" y1="50.8" x2="177.02" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="177.02" y1="63.5" x2="182.1" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="166.86" y1="50.8" x2="177.02" y2="50.8" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="177.02" y1="50.8" x2="177.02" y2="63.5" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="177.02" y1="63.5" x2="182.1" y2="63.5" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="182.1" y1="63.5" x2="182.1" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="182.1" y1="63.5" x2="182.1" y2="58.42" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="OUT" class="0">
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="118.6" y1="25.4" x2="118.6" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="118.6" y1="25.4" x2="118.6" y2="17.78" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 <pinref part="OUT" gate="G$1" pin="P$1"/>
-<label x="117.4" y="20.5" size="1.778" layer="95" rot="R90"/>
+<label x="117.4" y="20.5" size="1.778" layer="95" rot="R90" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
 <pinref part="IC2" gate="G$1" pin="OUTPUT_A"/>
-<wire x1="118.6" y1="33.02" x2="118.6" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="118.6" y1="35.56" x2="118.6" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="118.6" y1="45.72" x2="123.68" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="118.6" y1="33.02" x2="118.6" y2="35.56" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="118.6" y1="35.56" x2="118.6" y2="45.72" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="118.6" y1="45.72" x2="123.68" y2="45.72" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="126.22" y1="35.56" x2="118.6" y2="35.56" width="0.1524" layer="91"/>
-<junction x="118.6" y="35.56"/>
+<wire x1="126.22" y1="35.56" x2="118.6" y2="35.56" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<junction x="118.6" y="35.56" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="INPUT_B"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="123.68" y1="50.8" x2="118.6" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="118.6" y1="50.8" x2="118.6" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="123.68" y1="50.8" x2="118.6" y2="50.8" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="118.6" y1="50.8" x2="118.6" y2="60.96" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="5V" class="0">
 <segment>
 <pinref part="SUPPLY10" gate="G$1" pin="5V"/>
 <pinref part="IC1" gate="G$1" pin="VCC"/>
-<wire x1="68.58" y1="81.28" x2="68.58" y2="71" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="71" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="53.34" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="81.28" x2="68.58" y2="71" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="68.58" y1="71" x2="68.58" y2="53.34" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="68.58" y1="53.34" x2="63.5" y2="53.34" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="62.88" y1="71" x2="68.58" y2="71" width="0.1524" layer="91"/>
-<junction x="68.58" y="71"/>
+<wire x1="62.88" y1="71" x2="68.58" y2="71" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<junction x="68.58" y="71" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="SUPPLY11" gate="G$1" pin="5V"/>
 <pinref part="IC2" gate="G$1" pin="VCC"/>
-<wire x1="169.4" y1="76.2" x2="169.4" y2="68.4" width="0.1524" layer="91"/>
-<wire x1="169.4" y1="68.4" x2="169.4" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="169.4" y1="53.34" x2="166.86" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="169.4" y1="76.2" x2="169.4" y2="68.4" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="169.4" y1="68.4" x2="169.4" y2="53.34" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="169.4" y1="53.34" x2="166.86" y2="53.34" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="165.18" y1="68.4" x2="169.4" y2="68.4" width="0.1524" layer="91"/>
-<junction x="169.4" y="68.4"/>
+<wire x1="165.18" y1="68.4" x2="169.4" y2="68.4" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<junction x="169.4" y="68.4" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 <segment>
 <pinref part="+5" gate="G$1" pin="P$1"/>
 <pinref part="SUPPLY16" gate="G$1" pin="5V"/>
-<wire x1="30.48" y1="81.28" x2="30.48" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="81.28" x2="30.48" y2="86.36" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<wire x1="84.702" y1="45.72" x2="84.702" y2="45.726" width="0.1524" layer="91"/>
+<wire x1="84.702" y1="45.72" x2="84.702" y2="45.726" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="U$9" gate="G$1" pin="IN"/>
 <pinref part="IC1" gate="G$1" pin="OUTPUT_B"/>
-<wire x1="78.96" y1="45.75" x2="63.5" y2="45.75" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="45.75" x2="63.5" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="78.96" y1="45.75" x2="63.5" y2="45.75" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="63.5" y1="45.75" x2="63.5" y2="45.72" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U$9" gate="G$1" pin="OUT"/>
-<wire x1="98.96" y1="45.75" x2="110.2" y2="45.75" width="0.1524" layer="91"/>
-<wire x1="110.2" y1="45.75" x2="110.2" y2="53.4" width="0.1524" layer="91"/>
+<wire x1="98.96" y1="45.75" x2="110.2" y2="45.75" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="110.2" y1="45.75" x2="110.2" y2="53.4" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 <pinref part="IC2" gate="G$1" pin="INPUT_A"/>
-<wire x1="110.2" y1="53.4" x2="123.68" y2="53.4" width="0.1524" layer="91"/>
-<wire x1="123.68" y1="53.4" x2="123.68" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="110.2" y1="53.4" x2="123.68" y2="53.4" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
+<wire x1="123.68" y1="53.4" x2="123.68" y2="53.34" width="0.1524" layer="91" grouprefs="DOUBLE_CONVERSION_MIXER"/>
 </segment>
 </net>
 </nets>
@@ -10440,6 +10443,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.5" severity="warning">
+Since Version 9.5, EAGLE supports persistent groups with
+schematics, and board files. Those persistent groups
+will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
 Since Version 8.4, EAGLE supports properties for SPICE simulation. 
