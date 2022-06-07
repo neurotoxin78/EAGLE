@@ -491,6 +491,7 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 </deviceset>
 <deviceset name="R_0805_SMD">
 <gates>
+<gate name="G$1" symbol="R-EU" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">

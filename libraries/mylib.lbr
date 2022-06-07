@@ -427,7 +427,7 @@ grid 5.08 mm, diameter 5 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="2X_SMD_PIN">
+<deviceset name="2X_SMD_PIN" prefix="CON_" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="2X_SMD_PIN" x="0" y="-5.08"/>
 </gates>
