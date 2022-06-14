@@ -95,7 +95,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="no"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="117" name="PM_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="PF_Ref" color="7" fill="1" visible="no" active="no"/>
+<layer number="120" name="WFL_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -105,15 +108,40 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="EEE" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="_tKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="ASSEMBLY_TOP" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="PLACE_BOUND_TOP" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="no" active="no"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="no"/>
+<layer number="147" name="PIN_NUMBER" color="7" fill="1" visible="no" active="no"/>
+<layer number="148" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="no"/>
+<layer number="149" name="DrillLegend_02-15" color="7" fill="1" visible="no" active="no"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -12705,6 +12733,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="12V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
+<symbol name="5V">
+<description>&lt;h3&gt;5V Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="VIN">
+<description>&lt;h3&gt;Input Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="VIN" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="12V" prefix="SUPPLY">
@@ -12712,6 +12754,34 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Power supply symbol for a specifically-stated 12V source.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="12V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5V" prefix="SUPPLY">
+<description>&lt;h3&gt;5V Supply Symbol&lt;/h3&gt;
+&lt;p&gt;Power supply symbol for a specifically-stated 5V source.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VIN" prefix="SUPPLY">
+<description>&lt;h3&gt;Input Voltage Supply&lt;/h3&gt;
+&lt;p&gt;Generic voltage input supply symbol.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="VIN" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -13145,6 +13215,25 @@ Metric Code Size 2012</description>
 <smd name="P$1" x="0" y="0" dx="3.81" dy="1.9304" layer="1" rot="R90"/>
 <pad name="P$2" x="0" y="3.163" drill="1" diameter="2" first="yes"/>
 </package>
+<package name="M0805" urn="urn:adsk.eagle:footprint:23065/1" locally_modified="yes">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+MELF 0.10 W</description>
+<wire x1="-3.973" y1="1.083" x2="3.973" y2="1.083" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="-1.083" x2="-3.973" y2="-1.083" width="0.0508" layer="39"/>
+<wire x1="-3.973" y1="-1.083" x2="-3.973" y2="1.083" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="1.083" x2="3.973" y2="-1.083" width="0.0508" layer="39"/>
+<wire x1="0.7112" y1="0.635" x2="-0.7112" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="0.7112" y1="-0.635" x2="-0.7112" y2="-0.635" width="0.1524" layer="51"/>
+<smd name="1" x="-1.15" y="0" dx="1.3" dy="1.6" layer="1"/>
+<smd name="2" x="1.15" y="0" dx="1.3" dy="1.6" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.0414" y1="-0.7112" x2="-0.6858" y2="0.7112" layer="51"/>
+<rectangle x1="0.6858" y1="-0.7112" x2="1.0414" y2="0.7112" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5999" x2="0.1999" y2="0.5999" layer="35"/>
+<pad name="P$1" x="-2.9" y="0" drill="1" diameter="2" shape="octagon"/>
+<pad name="P$2" x="2.9" y="0" drill="1" diameter="2" shape="octagon"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2X_SMD_PIN">
@@ -13202,6 +13291,20 @@ Metric Code Size 2012</description>
 <wire x1="2.54" y1="1.778" x2="7.366" y2="1.778" width="0.254" layer="94"/>
 <wire x1="7.366" y1="1.778" x2="7.366" y2="-1.524" width="0.254" layer="94"/>
 <wire x1="7.366" y1="-1.524" x2="2.54" y2="-1.524" width="0.254" layer="94"/>
+</symbol>
+<symbol name="L-US">
+<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90"/>
+<text x="-1.27" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13300,6 +13403,22 @@ Metric Code Size 2012</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="L_0805_PTH" prefix="L" uservalue="yes">
+<gates>
+<gate name="L$1" symbol="L-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="M0805">
+<connects>
+<connect gate="L$1" pin="1" pad="1 P$1"/>
+<connect gate="L$1" pin="2" pad="2 P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="LM1117MPX-33NOPB">
@@ -13377,6 +13496,155 @@ Source: &lt;a href="https://www.arrow.com/en/products/lm1117mpx-33nopb/on-semico
 </deviceset>
 </devicesets>
 </library>
+<library name="L7805CV">
+<description>&lt;Linear voltage regulator,L7805CV 5V 1.5A STMicroelectronics L7805CV, Single Linear Voltage Regulator, 1.5A 5 V, 3-Pin TO-220&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="TO255P460X1020X2008-3P">
+<description>&lt;b&gt;3-Pin TO-220&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1" diameter="2" shape="long" rot="R90"/>
+<pad name="2" x="2.55" y="0" drill="1" diameter="2" shape="long" rot="R90"/>
+<pad name="3" x="5.1" y="0" drill="1" diameter="2" shape="long" rot="R90"/>
+<text x="2.54" y="3.81" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="2.54" y="6.35" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.9" y1="3.32" x2="8" y2="3.32" width="0.05" layer="51"/>
+<wire x1="8" y1="3.32" x2="8" y2="-1.78" width="0.05" layer="51"/>
+<wire x1="8" y1="-1.78" x2="-2.9" y2="-1.78" width="0.05" layer="51"/>
+<wire x1="-2.9" y1="-1.78" x2="-2.9" y2="3.32" width="0.05" layer="51"/>
+<wire x1="-2.65" y1="3.07" x2="7.75" y2="3.07" width="0.1" layer="51"/>
+<wire x1="7.75" y1="3.07" x2="7.75" y2="-1.53" width="0.1" layer="51"/>
+<wire x1="7.75" y1="-1.53" x2="-2.65" y2="-1.53" width="0.1" layer="51"/>
+<wire x1="-2.65" y1="-1.53" x2="-2.65" y2="3.07" width="0.1" layer="51"/>
+<wire x1="-2.65" y1="1.795" x2="-1.375" y2="3.07" width="0.1" layer="51"/>
+<wire x1="7.75" y1="-1.53" x2="7.75" y2="3.07" width="0.2" layer="21"/>
+<wire x1="7.75" y1="3.07" x2="-2.65" y2="3.07" width="0.2" layer="21"/>
+<wire x1="-2.65" y1="3.07" x2="-2.65" y2="0" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="L7805CV">
+<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="INPUT" x="0" y="0" length="middle"/>
+<pin name="GROUND" x="0" y="-2.54" length="middle"/>
+<pin name="OUTPUT" x="0" y="-5.08" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="L7805CV" prefix="IC">
+<description>&lt;b&gt;Linear voltage regulator,L7805CV 5V 1.5A STMicroelectronics L7805CV, Single Linear Voltage Regulator, 1.5A 5 V, 3-Pin TO-220&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.st.com/web/en/resource/technical/document/datasheet/CD00000444.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="L7805CV" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO255P460X1020X2008-3P">
+<connects>
+<connect gate="G$1" pin="GROUND" pad="2"/>
+<connect gate="G$1" pin="INPUT" pad="1"/>
+<connect gate="G$1" pin="OUTPUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ARROW_PART_NUMBER" value="L7805CV" constant="no"/>
+<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/l7805cv/stmicroelectronics?region=europe" constant="no"/>
+<attribute name="DESCRIPTION" value="Linear voltage regulator,L7805CV 5V 1.5A STMicroelectronics L7805CV, Single Linear Voltage Regulator, 1.5A 5 V, 3-Pin TO-220" constant="no"/>
+<attribute name="HEIGHT" value="4.6mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="STMicroelectronics" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="L7805CV" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="511-L7805CV" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/STMicroelectronics/L7805CV?qs=9NrABl3fj%2FqplZAHiYUxWg%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="inductors" urn="urn:adsk.eagle:library:243">
+<description>&lt;b&gt;Inductors and Filters&lt;/b&gt;&lt;p&gt;
+Based on the previous library ind-a.lbr&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DR74" urn="urn:adsk.eagle:footprint:15036/1" library_version="4">
+<description>&lt;b&gt;High Power Density, High Efficiency, Shielded Inductors&lt;/b&gt;&lt;p&gt;
+Source: coiltronics_dr_series.pdf</description>
+<wire x1="-3.7" y1="3.7" x2="3.7" y2="3.7" width="0.2032" layer="21"/>
+<wire x1="3.7" y1="3.7" x2="3.7" y2="-3.7" width="0.2032" layer="21"/>
+<wire x1="3.7" y1="-3.7" x2="-3.7" y2="-3.7" width="0.2032" layer="21"/>
+<wire x1="-3.7" y1="-3.7" x2="-3.7" y2="3.7" width="0.2032" layer="21"/>
+<wire x1="0" y1="2.975" x2="-2.4" y2="1.75" width="0.2032" layer="21" curve="53.855356"/>
+<wire x1="0" y1="2.975" x2="2.4" y2="1.75" width="0.2032" layer="21" curve="-53.855356"/>
+<wire x1="0" y1="-2.975" x2="2.4" y2="-1.75" width="0.2032" layer="21" curve="53.855356"/>
+<wire x1="0" y1="-2.975" x2="-2.4" y2="-1.75" width="0.2032" layer="21" curve="-53.855356"/>
+<circle x="0" y="0" radius="2.975" width="0.2032" layer="51"/>
+<smd name="1" x="-3" y="0" dx="2.5" dy="3.25" layer="1"/>
+<smd name="2" x="3" y="0" dx="2.5" dy="3.25" layer="1"/>
+<text x="-3.5" y="4" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.5" y="-5.5" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.8215" y1="1.984" x2="-1.7215" y2="2.559" layer="21" rot="R45"/>
+<rectangle x1="-2.8215" y1="-2.559" x2="-1.7215" y2="-1.984" layer="21" rot="R135"/>
+<rectangle x1="1.7215" y1="-2.559" x2="2.8215" y2="-1.984" layer="21" rot="R225"/>
+<rectangle x1="1.7215" y1="1.984" x2="2.8215" y2="2.559" layer="21" rot="R315"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="DR74" urn="urn:adsk.eagle:package:15122/1" type="box" library_version="4">
+<description>High Power Density, High Efficiency, Shielded Inductors
+Source: coiltronics_dr_series.pdf</description>
+<packageinstances>
+<packageinstance name="DR74"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="DRK" urn="urn:adsk.eagle:symbol:28107/2" library_version="4">
+<wire x1="-3.81" y1="1.651" x2="3.81" y2="1.651" width="0.254" layer="94"/>
+<text x="-3.81" y="2.286" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.937" y="-3.048" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-3.81" y1="-0.889" x2="3.81" y2="0.889" layer="94"/>
+<pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DR74" urn="urn:adsk.eagle:component:15201/4" prefix="L" library_version="4">
+<description>&lt;b&gt;High Power Density, High Efficiency, Shielded Inductors&lt;/b&gt;&lt;p&gt;
+Source: coiltronics_dr_series.pdf</description>
+<gates>
+<gate name="G$1" symbol="DRK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DR74">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15122/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="L" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+<spice>
+<pinmapping spiceprefix="L">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13441,18 +13709,9 @@ Source: &lt;a href="https://www.arrow.com/en/products/lm1117mpx-33nopb/on-semico
 <part name="C6" library="mylib" deviceset="C_0805_SMD" device="" value="22nF"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="12V" device=""/>
-<part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="12V" device=""/>
 <part name="R_ATT" library="rcl" deviceset="R-EU_" device="R1210" package3d_urn="urn:adsk.eagle:package:23554/2" value="20"/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="H1" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.0" package3d_urn="urn:adsk.eagle:package:14280/1"/>
-<part name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.0" package3d_urn="urn:adsk.eagle:package:14280/1"/>
-<part name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.0" package3d_urn="urn:adsk.eagle:package:14280/1"/>
-<part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.0" package3d_urn="urn:adsk.eagle:package:14280/1"/>
-<part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="RF_IN" library="mylib" deviceset="2X_SMD_PTH_PIN" device=""/>
 <part name="COS" library="mylib" deviceset="2X_SMD_PTH_PIN" device=""/>
 <part name="SIN" library="mylib" deviceset="2X_SMD_PTH_PIN" device=""/>
@@ -13479,6 +13738,15 @@ Source: &lt;a href="https://www.arrow.com/en/products/lm1117mpx-33nopb/on-semico
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="3V3" library="mylib" deviceset="2X_SMD_PTH_PIN" device=""/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="IC2" library="L7805CV" deviceset="L7805CV" device=""/>
+<part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="L1" library="inductors" library_urn="urn:adsk.eagle:library:243" deviceset="DR74" device="" package3d_urn="urn:adsk.eagle:package:15122/1"/>
+<part name="L2" library="mylib" deviceset="L_0805_PTH" device=""/>
+<part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
+<part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
+<part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13688,9 +13956,6 @@ Source: &lt;a href="https://www.arrow.com/en/products/lm1117mpx-33nopb/on-semico
 <instance part="SUPPLY3" gate="G$1" x="45.72" y="127" smashed="yes" rot="R90">
 <attribute name="VALUE" x="42.926" y="127" size="1.778" layer="96" rot="R90" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="66.04" y="160.02" smashed="yes" rot="R90">
-<attribute name="VALUE" x="63.246" y="160.02" size="1.778" layer="96" rot="R90" align="bottom-center"/>
-</instance>
 <instance part="R_ATT" gate="G$1" x="2.54" y="63.5" smashed="yes">
 <attribute name="NAME" x="1.27" y="64.9986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="6.35" y="65.278" size="1.778" layer="96"/>
@@ -13700,30 +13965,6 @@ Source: &lt;a href="https://www.arrow.com/en/products/lm1117mpx-33nopb/on-semico
 </instance>
 <instance part="GND13" gate="1" x="-20.32" y="53.34" smashed="yes">
 <attribute name="VALUE" x="-22.86" y="50.8" size="1.778" layer="96"/>
-</instance>
-<instance part="H1" gate="G$1" x="38.1" y="-48.26" smashed="yes">
-<attribute name="NAME" x="40.894" y="-47.6758" size="1.778" layer="95"/>
-</instance>
-<instance part="H2" gate="G$1" x="38.1" y="-55.88" smashed="yes">
-<attribute name="NAME" x="40.894" y="-55.2958" size="1.778" layer="95"/>
-</instance>
-<instance part="H3" gate="G$1" x="38.1" y="-63.5" smashed="yes">
-<attribute name="NAME" x="40.894" y="-62.9158" size="1.778" layer="95"/>
-</instance>
-<instance part="H4" gate="G$1" x="38.1" y="-71.12" smashed="yes">
-<attribute name="VALUE" x="40.894" y="-73.5838" size="1.778" layer="96"/>
-</instance>
-<instance part="GND18" gate="1" x="30.48" y="-48.26" smashed="yes" rot="R270">
-<attribute name="VALUE" x="27.94" y="-45.72" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="GND19" gate="1" x="30.48" y="-55.88" smashed="yes" rot="R270">
-<attribute name="VALUE" x="27.94" y="-53.34" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="GND20" gate="1" x="30.48" y="-63.5" smashed="yes" rot="R270">
-<attribute name="VALUE" x="27.94" y="-60.96" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="GND23" gate="1" x="30.48" y="-71.12" smashed="yes" rot="R270">
-<attribute name="VALUE" x="27.94" y="-68.58" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="RF_IN" gate="G$1" x="-33.02" y="63.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-34.1" y="57.4" size="1.27" layer="95" rot="R180"/>
@@ -13747,22 +13988,22 @@ Source: &lt;a href="https://www.arrow.com/en/products/lm1117mpx-33nopb/on-semico
 <attribute name="NAME" x="151.13" y="-60.96" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="128.27" y="-60.96" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="SUPPLY7" gate="G$1" x="96.52" y="-71.12" smashed="yes" rot="R90">
-<attribute name="VALUE" x="93.726" y="-71.12" size="1.778" layer="96" rot="R90" align="bottom-center"/>
+<instance part="SUPPLY7" gate="G$1" x="134.62" y="-109.22" smashed="yes">
+<attribute name="VALUE" x="134.62" y="-106.426" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY8" gate="G$1" x="91.44" y="-68.58" smashed="yes" rot="R90">
 <attribute name="VALUE" x="88.265" y="-70.485" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C7" gate="G$1" x="114.3" y="-78.74" smashed="yes">
-<attribute name="NAME" x="115.443" y="-78.2574" size="1.778" layer="95"/>
-<attribute name="VALUE" x="115.443" y="-83.3374" size="1.778" layer="96"/>
+<instance part="C7" gate="G$1" x="116.84" y="-109.22" smashed="yes" rot="R180">
+<attribute name="NAME" x="115.697" y="-109.7026" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="115.697" y="-104.6226" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C13" gate="G$1" x="167.64" y="-78.74" smashed="yes">
 <attribute name="NAME" x="168.783" y="-78.2574" size="1.778" layer="95"/>
 <attribute name="VALUE" x="168.783" y="-83.3374" size="1.778" layer="96"/>
 </instance>
-<instance part="GND22" gate="1" x="114.3" y="-88.9" smashed="yes">
-<attribute name="VALUE" x="111.76" y="-91.44" size="1.778" layer="96"/>
+<instance part="GND22" gate="1" x="116.84" y="-99.06" smashed="yes" rot="R180">
+<attribute name="VALUE" x="119.38" y="-96.52" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND24" gate="1" x="167.64" y="-88.9" smashed="yes">
 <attribute name="VALUE" x="165.1" y="-91.44" size="1.778" layer="96"/>
@@ -13771,12 +14012,12 @@ Source: &lt;a href="https://www.arrow.com/en/products/lm1117mpx-33nopb/on-semico
 <attribute name="NAME" x="174.879" y="-64.516" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="179.959" y="-64.516" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C17" gate="G$1" x="106.68" y="-81.28" smashed="yes" rot="R180">
-<attribute name="NAME" x="105.156" y="-81.661" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="105.156" y="-76.581" size="1.778" layer="96" rot="R180"/>
+<instance part="C17" gate="G$1" x="124.46" y="-106.68" smashed="yes">
+<attribute name="NAME" x="125.984" y="-106.299" size="1.778" layer="95"/>
+<attribute name="VALUE" x="125.984" y="-111.379" size="1.778" layer="96"/>
 </instance>
-<instance part="GND25" gate="1" x="106.68" y="-88.9" smashed="yes">
-<attribute name="VALUE" x="104.14" y="-91.44" size="1.778" layer="96"/>
+<instance part="GND25" gate="1" x="124.46" y="-99.06" smashed="yes" rot="R180">
+<attribute name="VALUE" x="127" y="-96.52" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND26" gate="1" x="185.42" y="-66.04" smashed="yes" rot="R90">
 <attribute name="VALUE" x="187.96" y="-68.58" size="1.778" layer="96" rot="R90"/>
@@ -13784,7 +14025,7 @@ Source: &lt;a href="https://www.arrow.com/en/products/lm1117mpx-33nopb/on-semico
 <instance part="RF_IN1" gate="G$1" x="88.9" y="160.02" smashed="yes">
 <attribute name="NAME" x="89.98" y="166.12" size="1.27" layer="95"/>
 </instance>
-<instance part="P_1" gate="G$1" x="76.2" y="154.94" smashed="yes" rot="R270"/>
+<instance part="P_1" gate="G$1" x="86.36" y="152.4" smashed="yes"/>
 <instance part="R3" gate="G$1" x="152.4" y="40.64" smashed="yes">
 <attribute name="NAME" x="151.13" y="42.1386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="148.59" y="37.338" size="1.778" layer="96"/>
@@ -13806,6 +14047,36 @@ Source: &lt;a href="https://www.arrow.com/en/products/lm1117mpx-33nopb/on-semico
 </instance>
 <instance part="GND28" gate="1" x="86.36" y="-55.88" smashed="yes" rot="R270">
 <attribute name="VALUE" x="83.82" y="-53.34" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="IC2" gate="G$1" x="142.24" y="-116.84" smashed="yes">
+<attribute name="NAME" x="163.83" y="-109.22" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="163.83" y="-111.76" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="GND18" gate="1" x="111.76" y="-124.46" smashed="yes">
+<attribute name="VALUE" x="109.22" y="-127" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY5" gate="G$1" x="124.46" y="-129.54" smashed="yes" rot="R180">
+<attribute name="VALUE" x="124.46" y="-132.334" size="1.778" layer="96" rot="R180" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY6" gate="G$1" x="101.6" y="-71.12" smashed="yes" rot="R90">
+<attribute name="VALUE" x="98.806" y="-71.12" size="1.778" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="L1" gate="G$1" x="93.98" y="-116.84" smashed="yes">
+<attribute name="NAME" x="90.17" y="-114.554" size="1.778" layer="95"/>
+<attribute name="VALUE" x="90.043" y="-119.888" size="1.778" layer="96"/>
+</instance>
+<instance part="L2" gate="L$1" x="93.98" y="-109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="99.06" y="-110.49" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="99.06" y="-105.41" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY10" gate="G$1" x="68.58" y="-116.84" smashed="yes" rot="R90">
+<attribute name="VALUE" x="65.786" y="-116.84" size="1.778" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY11" gate="G$1" x="68.58" y="160.02" smashed="yes" rot="R90">
+<attribute name="VALUE" x="65.786" y="160.02" size="1.778" layer="96" rot="R90" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY4" gate="G$1" x="78.74" y="152.4" smashed="yes" rot="R90">
+<attribute name="VALUE" x="75.946" y="152.4" size="1.778" layer="96" rot="R90" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -13919,26 +14190,6 @@ Source: &lt;a href="https://www.arrow.com/en/products/lm1117mpx-33nopb/on-semico
 <wire x1="83.82" y1="163.02" x2="83.82" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="H1" gate="G$1" pin="MOUNT"/>
-<pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="33.02" y1="-48.26" x2="35.56" y2="-48.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="H2" gate="G$1" pin="MOUNT"/>
-<pinref part="GND19" gate="1" pin="GND"/>
-<wire x1="33.02" y1="-55.88" x2="35.56" y2="-55.88" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="H3" gate="G$1" pin="MOUNT"/>
-<pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="33.02" y1="-63.5" x2="35.56" y2="-63.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="H4" gate="G$1" pin="MOUNT"/>
-<pinref part="GND23" gate="1" pin="GND"/>
-<wire x1="33.02" y1="-71.12" x2="35.56" y2="-71.12" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND13" gate="1" pin="GND"/>
 <pinref part="RF_IN" gate="G$1" pin="PIN0"/>
 <wire x1="-20.32" y1="55.88" x2="-20.32" y2="60.5" width="0.1524" layer="91"/>
@@ -13971,7 +14222,7 @@ Source: &lt;a href="https://www.arrow.com/en/products/lm1117mpx-33nopb/on-semico
 <segment>
 <pinref part="C7" gate="G$1" pin="-"/>
 <pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="114.3" y1="-86.36" x2="114.3" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="-101.6" x2="116.84" y2="-104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C13" gate="G$1" pin="-"/>
@@ -13981,7 +14232,7 @@ Source: &lt;a href="https://www.arrow.com/en/products/lm1117mpx-33nopb/on-semico
 <segment>
 <pinref part="C17" gate="G$1" pin="1"/>
 <pinref part="GND25" gate="1" pin="GND"/>
-<wire x1="106.68" y1="-86.36" x2="106.68" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="-101.6" x2="124.46" y2="-104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C14" gate="G$1" pin="2"/>
@@ -14003,6 +14254,12 @@ Source: &lt;a href="https://www.arrow.com/en/products/lm1117mpx-33nopb/on-semico
 <pinref part="3V3" gate="G$1" pin="PIN0"/>
 <wire x1="88.9" y1="-55.88" x2="93.52" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="93.52" y1="-55.88" x2="93.52" y2="-50.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="GROUND"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="142.24" y1="-119.38" x2="111.76" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="-119.38" x2="111.76" y2="-121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -14304,26 +14561,31 @@ Source: &lt;a href="https://www.arrow.com/en/products/lm1117mpx-33nopb/on-semico
 <pinref part="SUPPLY3" gate="G$1" pin="12V"/>
 </segment>
 <segment>
-<wire x1="86.44" y1="160.02" x2="76.2" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="SUPPLY4" gate="G$1" pin="12V"/>
-<pinref part="RF_IN1" gate="G$1" pin="PIN1"/>
-<pinref part="P_1" gate="G$1" pin="P$1"/>
-<wire x1="76.2" y1="160.02" x2="66.04" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="154.94" x2="76.2" y2="160.02" width="0.1524" layer="91"/>
-<junction x="76.2" y="160.02"/>
+<pinref part="IC2" gate="G$1" pin="INPUT"/>
+<wire x1="142.24" y1="-116.84" x2="134.62" y2="-116.84" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="+"/>
+<wire x1="134.62" y1="-116.84" x2="124.46" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="-116.84" x2="116.84" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="-111.76" x2="116.84" y2="-116.84" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="-111.76" x2="124.46" y2="-116.84" width="0.1524" layer="91"/>
+<junction x="124.46" y="-116.84"/>
+<pinref part="L1" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="-116.84" x2="109.22" y2="-116.84" width="0.1524" layer="91"/>
+<junction x="116.84" y="-116.84"/>
+<pinref part="L2" gate="L$1" pin="2"/>
+<wire x1="109.22" y1="-116.84" x2="116.84" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-109.22" x2="109.22" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-109.22" x2="109.22" y2="-116.84" width="0.1524" layer="91"/>
+<junction x="109.22" y="-116.84"/>
+<pinref part="SUPPLY7" gate="G$1" pin="12V"/>
+<wire x1="134.62" y1="-109.22" x2="134.62" y2="-116.84" width="0.1524" layer="91"/>
+<junction x="134.62" y="-116.84"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="INPUT"/>
-<pinref part="SUPPLY7" gate="G$1" pin="12V"/>
-<wire x1="96.52" y1="-71.12" x2="106.68" y2="-71.12" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="+"/>
-<wire x1="106.68" y1="-71.12" x2="114.3" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="-71.12" x2="121.92" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="-76.2" x2="114.3" y2="-71.12" width="0.1524" layer="91"/>
-<junction x="114.3" y="-71.12"/>
-<pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="-76.2" x2="106.68" y2="-71.12" width="0.1524" layer="91"/>
-<junction x="106.68" y="-71.12"/>
+<pinref part="P_1" gate="G$1" pin="P$1"/>
+<pinref part="SUPPLY4" gate="G$1" pin="12V"/>
+<wire x1="78.74" y1="152.4" x2="86.36" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -14338,6 +14600,39 @@ Source: &lt;a href="https://www.arrow.com/en/products/lm1117mpx-33nopb/on-semico
 <pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="RF_IN" gate="G$1" pin="PIN1"/>
 <wire x1="-30.56" y1="63.5" x2="-15.24" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<pinref part="SUPPLY5" gate="G$1" pin="5V"/>
+<pinref part="IC2" gate="G$1" pin="OUTPUT"/>
+<wire x1="124.46" y1="-129.54" x2="124.46" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="-121.92" x2="142.24" y2="-121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="INPUT"/>
+<wire x1="106.68" y1="-71.12" x2="114.3" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="-71.12" x2="121.92" y2="-71.12" width="0.1524" layer="91"/>
+<pinref part="SUPPLY6" gate="G$1" pin="5V"/>
+<wire x1="101.6" y1="-71.12" x2="106.68" y2="-71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VIN" class="0">
+<segment>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="-116.84" x2="81.28" y2="-116.84" width="0.1524" layer="91"/>
+<pinref part="L2" gate="L$1" pin="1"/>
+<wire x1="86.36" y1="-109.22" x2="81.28" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-109.22" x2="81.28" y2="-116.84" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="G$1" pin="VIN"/>
+<wire x1="68.58" y1="-116.84" x2="81.28" y2="-116.84" width="0.1524" layer="91"/>
+<junction x="81.28" y="-116.84"/>
+</segment>
+<segment>
+<wire x1="86.44" y1="160.02" x2="76.2" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="RF_IN1" gate="G$1" pin="PIN1"/>
+<pinref part="SUPPLY11" gate="G$1" pin="VIN"/>
+<wire x1="68.58" y1="160.02" x2="76.2" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
