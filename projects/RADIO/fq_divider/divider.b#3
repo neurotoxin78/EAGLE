@@ -535,11 +535,11 @@ design rules under a new name.</description>
 <element name="VCC" library="mylib" package="2X_SMD_PTH" value="2X_SMD_PTH_PIN" x="30" y="9.05" smashed="yes" rot="R270"/>
 <element name="QSD_CLK1" library="mylib" package="2X_SMD_PTH" value="2X_SMD_PTH_PIN" x="6" y="36.7" smashed="yes"/>
 <element name="QSD_CLK0" library="mylib" package="2X_SMD_PTH" value="2X_SMD_PTH_PIN" x="6" y="16.3" smashed="yes"/>
-<element name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" package="2,8-PAD" package3d_urn="urn:adsk.eagle:package:14281/1" value="MOUNT-PAD-ROUND2.8" x="0.5" y="-11.5" smashed="yes">
-<attribute name="POPULARITY" value="6" x="0.5" y="-11.5" size="1.778" layer="27" display="off"/>
+<element name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" package="2,8-PAD" package3d_urn="urn:adsk.eagle:package:14281/1" value="MOUNT-PAD-ROUND2.8" x="54" y="14.5" locked="yes" smashed="yes">
+<attribute name="POPULARITY" value="6" x="54" y="14.5" locked="yes" size="1.778" layer="27" display="off"/>
 </element>
-<element name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" package="2,8-PAD" package3d_urn="urn:adsk.eagle:package:14281/1" value="MOUNT-PAD-ROUND2.8" x="0.5" y="-19" smashed="yes">
-<attribute name="POPULARITY" value="6" x="0.5" y="-19" size="1.778" layer="27" display="off"/>
+<element name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" package="2,8-PAD" package3d_urn="urn:adsk.eagle:package:14281/1" value="MOUNT-PAD-ROUND2.8" x="54" y="39.5" locked="yes" smashed="yes">
+<attribute name="POPULARITY" value="6" x="54" y="39.5" locked="yes" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -567,8 +567,8 @@ design rules under a new name.</description>
 <contactref element="QSD_CLK0" pad="T$2"/>
 <contactref element="H3" pad="B2,8"/>
 <contactref element="H4" pad="B2,8"/>
-<wire x1="0.5" y1="-11.5" x2="0.5" y2="-19" width="0" layer="19" extent="1-1"/>
-<wire x1="14" y1="6" x2="0.5" y2="-11.5" width="0" layer="19" extent="1-1"/>
+<wire x1="31.7" y1="38.3" x2="54" y2="39.5" width="0" layer="19" extent="1-1"/>
+<wire x1="54" y1="14.5" x2="47" y2="6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC1" pad="14"/>

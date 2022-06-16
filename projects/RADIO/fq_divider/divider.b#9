@@ -619,7 +619,7 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="2"/>
 <contactref element="IC1" pad="9"/>
 <wire x1="15.338" y1="30.96" x2="13.54" y2="30.96" width="0.508" layer="1"/>
-<wire x1="13.54" y1="30.96" x2="13" y2="31.5" width="0.8128" layer="1"/>
+<wire x1="13.54" y1="30.96" x2="13" y2="31.5" width="0.6096" layer="1"/>
 <wire x1="13" y1="33.5" x2="12" y2="34.5" width="1" layer="1"/>
 <wire x1="13" y1="31.5" x2="13" y2="33.5" width="1" layer="1"/>
 <wire x1="20.762" y1="25.88" x2="22.62" y2="25.88" width="0.6096" layer="1"/>
@@ -637,7 +637,7 @@ design rules under a new name.</description>
 <wire x1="11.5" y1="35" x2="9" y2="35" width="1.016" layer="1"/>
 <wire x1="6.5" y1="24.5" x2="6.5" y2="35" width="1.016" layer="1"/>
 <wire x1="6.5" y1="35" x2="9" y2="35" width="1.016" layer="1"/>
-<wire x1="13.54" y1="30.96" x2="6" y2="35" width="0" layer="19" extent="1-1"/>
+<wire x1="9" y1="35" x2="6" y2="35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="QSD_CLK0">
 <contactref element="IC1" pad="6"/>
