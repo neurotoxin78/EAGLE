@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1518,7 +1518,7 @@ Source: 008-0260-0_E.pdf</description>
 <text x="-3.683" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.683" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="DIL08S" urn="urn:adsk.eagle:footprint:11988/1">
+<package name="DIL08S" urn="urn:adsk.eagle:footprint:11988/1" locally_modified="yes">
 <description>&lt;b&gt;CRYSTAL RESONATOR&lt;/b&gt;</description>
 <wire x1="-6.604" y1="-6.604" x2="5.334" y2="-6.604" width="0.254" layer="21"/>
 <wire x1="6.604" y1="-5.334" x2="6.604" y2="5.334" width="0.254" layer="21"/>
@@ -1546,10 +1546,10 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="-0.9398" y1="3.81" x2="-2.54" y2="3.81" width="0.1524" layer="21"/>
 <wire x1="-0.9398" y1="3.81" x2="-0.9398" y2="2.54" width="0.3048" layer="21"/>
 <circle x="-4.953" y="-4.953" radius="0.635" width="0.3048" layer="51"/>
-<pad name="1" x="-3.81" y="-3.81" drill="0.8128"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.8128"/>
-<pad name="5" x="3.81" y="3.81" drill="0.8128"/>
-<pad name="8" x="-3.81" y="3.81" drill="0.8128"/>
+<pad name="1" x="-3.81" y="-3.81" drill="1" diameter="2.5" shape="octagon"/>
+<pad name="4" x="3.81" y="-3.81" drill="1" diameter="2.5"/>
+<pad name="5" x="3.81" y="3.81" drill="1" diameter="2.5"/>
+<pad name="8" x="-3.81" y="3.81" drill="1" diameter="2.5"/>
 <text x="-5.08" y="7.0866" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-5.08" y="-0.5588" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-2.794" y="-5.715" size="1.27" layer="21" ratio="10">1</text>

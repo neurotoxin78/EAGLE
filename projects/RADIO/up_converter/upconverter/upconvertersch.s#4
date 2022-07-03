@@ -3837,6 +3837,7 @@ R2 3 2 {val-val*var/100}
 <part name="GND12" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="C6" library="mylib" deviceset="C_0805_PTH" device="" value="100nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -3957,6 +3958,10 @@ R2 3 2 {val-val*var/100}
 </instance>
 <instance part="SUPPLY5" gate="G$1" x="-12.7" y="0" smashed="yes">
 <attribute name="VALUE" x="-12.7" y="5.334" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="C6" gate="G$1" x="50.8" y="-25.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.419" y="-23.876" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="55.499" y="-23.876" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -4181,6 +4186,22 @@ R2 3 2 {val-val*var/100}
 <pinref part="QG1" gate="1" pin="OUT"/>
 <wire x1="30.48" y1="-20.32" x2="30.48" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-15.24" x2="20.32" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="S"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="-25.4" x2="48.26" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="-25.4" x2="121.92" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-25.4" x2="121.92" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="OSCILLATOR_1"/>
+<wire x1="121.92" y1="43.18" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

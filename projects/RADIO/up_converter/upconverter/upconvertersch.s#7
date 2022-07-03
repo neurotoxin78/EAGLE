@@ -3717,6 +3717,8 @@ R2 3 2 {val-val*var/100}
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U$1" library="mylib" deviceset="RTL_SDR_CONN" device=""/>
+<part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3815,6 +3817,12 @@ R2 3 2 {val-val*var/100}
 <attribute name="VALUE" x="-15.494" y="96.52" size="1.778" layer="96" rot="R270" align="top-center"/>
 </instance>
 <instance part="U$1" gate="G$1" x="83.82" y="7.62" smashed="yes" rot="R270"/>
+<instance part="GND10" gate="1" x="66.04" y="7.62" smashed="yes" rot="R270">
+<attribute name="VALUE" x="65.786" y="7.62" size="1.778" layer="96" rot="R270" align="top-center"/>
+</instance>
+<instance part="GND11" gate="1" x="66.04" y="17.78" smashed="yes" rot="R270">
+<attribute name="VALUE" x="65.786" y="17.78" size="1.778" layer="96" rot="R270" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3869,6 +3877,17 @@ R2 3 2 {val-val*var/100}
 <pinref part="5V" gate="G$1" pin="PIN0"/>
 <wire x1="-12.7" y1="96.52" x2="-5.54" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-5.54" y1="96.52" x2="-5.54" y2="101.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$2"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="68.58" y1="7.62" x2="76.2" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="17.78" x2="81.28" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="T2" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="17.78" x2="81.28" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -3993,15 +4012,6 @@ R2 3 2 {val-val*var/100}
 <pinref part="RF_IN" gate="G$1" pin="PIN1"/>
 <pinref part="R1" gate="G$1" pin="S"/>
 <wire x1="-81.36" y1="40.64" x2="-73.66" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="P$2"/>
-<wire x1="76.2" y1="7.62" x2="76.2" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="17.78" x2="81.28" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="T2" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="17.78" x2="81.28" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
