@@ -288,9 +288,6 @@ UsedLibrary="C:/Users/neuro/Documents/EAGLE/libraries/linear.lbr"
 UsedLibrary="C:/Users/neuro/Documents/EAGLE/libraries/mylib.lbr"
 UsedLibrary="C:/Users/neuro/Documents/EAGLE/libraries/rcl.lbr"
 UsedLibrary="C:/Users/neuro/Documents/EAGLE/libraries/SparkFun-Eagle-Libraries-main/SparkFun-PowerSymbols.lbr"
-UsedLibrary="C:/Users/neuro/Documents/EAGLE/libraries/FST3253MTCX.lbr"
-UsedLibrary="C:/Users/neuro/Documents/EAGLE/libraries/NE5532DRG4.lbr"
-UsedLibrary="C:/Users/neuro/Documents/EAGLE/libraries/ADE-1+.lbr"
 
 [Win_1]
 Type="Control Panel"
