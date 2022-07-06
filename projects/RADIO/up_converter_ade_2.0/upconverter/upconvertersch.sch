@@ -390,18 +390,19 @@ MELF 0.10 W</description>
 <package name="RTL_SDR_OUT">
 <hole x="3.5" y="-2.5" drill="1.5"/>
 <hole x="20.5" y="-2.5" drill="1.5"/>
-<smd name="P$1" x="12" y="-6" dx="5" dy="2" layer="1" rot="R90"/>
-<smd name="P$2" x="7.5" y="-6" dx="5" dy="2.5" layer="1" rot="R90"/>
-<smd name="P$3" x="16.5" y="-6" dx="5" dy="2.5" layer="1" rot="R90"/>
-<wire x1="0" y1="0" x2="24" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="-65" width="0.127" layer="21"/>
-<wire x1="24" y1="0" x2="24" y2="-65" width="0.127" layer="21"/>
-<wire x1="24" y1="-65" x2="18" y2="-65" width="0.127" layer="21"/>
-<wire x1="6" y1="-65" x2="0" y2="-65" width="0.127" layer="21"/>
-<wire x1="6" y1="-65" x2="6" y2="-84" width="0.127" layer="21"/>
-<wire x1="6" y1="-84" x2="18" y2="-84" width="0.127" layer="21"/>
-<wire x1="18" y1="-84" x2="18" y2="-65" width="0.127" layer="21"/>
-<wire x1="18" y1="-65" x2="6" y2="-65" width="0.127" layer="21"/>
+<smd name="P$1" x="12" y="-6" dx="5" dy="2" layer="16" roundness="20" rot="R90"/>
+<smd name="P$2" x="7.5" y="-6" dx="5" dy="2.5" layer="16" roundness="20" rot="R90"/>
+<smd name="P$3" x="16.5" y="-6" dx="5" dy="2.5" layer="16" roundness="20" rot="R90"/>
+<wire x1="0" y1="0" x2="24" y2="0" width="0.127" layer="22"/>
+<wire x1="0" y1="0" x2="0" y2="-65" width="0.127" layer="22"/>
+<wire x1="24" y1="0" x2="24" y2="-65" width="0.127" layer="22"/>
+<wire x1="24" y1="-65" x2="18" y2="-65" width="0.127" layer="22"/>
+<wire x1="6" y1="-65" x2="0" y2="-65" width="0.127" layer="22"/>
+<wire x1="6" y1="-65" x2="6" y2="-84" width="0.127" layer="22"/>
+<wire x1="6" y1="-84" x2="18" y2="-84" width="0.127" layer="22"/>
+<wire x1="18" y1="-84" x2="18" y2="-65" width="0.127" layer="22"/>
+<wire x1="18" y1="-65" x2="6" y2="-65" width="0.127" layer="22"/>
+<text x="15.24" y="-17.78" size="6.4516" layer="22" rot="MR270">RTL-SDR</text>
 </package>
 <package name="4X_PIN_HEADER">
 <smd name="P$1" x="0" y="0" dx="4" dy="2" layer="1" rot="R90"/>
@@ -4278,6 +4279,72 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 </deviceset>
 </devicesets>
 </library>
+<library name="164-11A06L">
+<description>&lt;Variable Inductors 164 Unicoil Tunable 100 MHz 2.3 A&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="16411A06L">
+<description>&lt;b&gt;164-11A06L-1&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="0.965" diameter="2.2"/>
+<pad name="2" x="3.53" y="3.53" drill="0.965" diameter="2.2"/>
+<text x="8.585" y="-0.235" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="9.085" y="3.265" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-0.84" y1="4.37" x2="4.37" y2="4.37" width="0.1" layer="51"/>
+<wire x1="4.37" y1="4.37" x2="4.37" y2="-0.84" width="0.1" layer="51"/>
+<wire x1="4.37" y1="-0.84" x2="-0.84" y2="-0.84" width="0.1" layer="51"/>
+<wire x1="-0.84" y1="-0.84" x2="-0.84" y2="4.37" width="0.1" layer="51"/>
+<wire x1="2.5" y1="4.37" x2="-0.84" y2="4.37" width="0.2" layer="21"/>
+<wire x1="-0.84" y1="4.37" x2="-0.84" y2="1" width="0.2" layer="21"/>
+<wire x1="1.25" y1="-0.84" x2="4.37" y2="-0.84" width="0.2" layer="21"/>
+<wire x1="4.37" y1="-0.84" x2="4.37" y2="2.5" width="0.2" layer="21"/>
+<wire x1="-2.2" y1="0" x2="-2.1" y2="0" width="0.2" layer="21" curve="180"/>
+<wire x1="-2.1" y1="0" x2="-2.2" y2="0" width="0.2" layer="21" curve="180"/>
+<wire x1="-2.2" y1="0" x2="-2.1" y2="0" width="0.2" layer="21" curve="180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="164-11A06L">
+<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="10.16" y1="0" x2="12.7" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="12.7" y1="0" x2="15.24" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<text x="16.51" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" visible="pad" length="middle"/>
+<pin name="2" x="20.32" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="164-11A06L" prefix="L">
+<description>&lt;b&gt;Variable Inductors 164 Unicoil Tunable 100 MHz 2.3 A&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.coilcraft.com/getmedia/31c16ea6-718f-435e-a089-e35fb15fb2b3/uni5.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="164-11A06L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="16411A06L">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ARROW_PART_NUMBER" value="" constant="no"/>
+<attribute name="ARROW_PRICE-STOCK" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Variable Inductors 164 Unicoil Tunable 100 MHz 2.3 A" constant="no"/>
+<attribute name="HEIGHT" value="8.38mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="COILCRAFT" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="164-11A06L" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="994-164-11A06L" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="http://www.mouser.com/Search/ProductDetail.aspx?qs=ZYnrCdKdyefrm2fCOgXEUQ%3d%3d" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4323,15 +4390,12 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 <part name="GND17" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND19" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C9" library="mylib" deviceset="C_0805_PTH" device="" value="100pF"/>
-<part name="C10" library="mylib" deviceset="C_0805_PTH" device="" value="12pF"/>
-<part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="L3" library="mylib" deviceset="L_0805_PTH" device="" value="39nH"/>
-<part name="L4" library="mylib" deviceset="L_0805_PTH" device="" value="39nH"/>
-<part name="L5" library="mylib" deviceset="L_0805_PTH" device="" value="39nH"/>
-<part name="C11" library="mylib" deviceset="C_0805_PTH" device="" value="15pF"/>
-<part name="C12" library="mylib" deviceset="C_0805_PTH" device="" value="15pF"/>
-<part name="C13" library="mylib" deviceset="C_0805_PTH" device="" value="33pF"/>
+<part name="L3" library="164-11A06L" deviceset="164-11A06L" device="" value="82nH"/>
+<part name="L4" library="164-11A06L" deviceset="164-11A06L" device="" value="56nH"/>
+<part name="L5" library="164-11A06L" deviceset="164-11A06L" device="" value="56nH"/>
+<part name="C11" library="mylib" deviceset="C_0805_PTH" device="" value="56pF"/>
+<part name="C12" library="mylib" deviceset="C_0805_PTH" device="" value="47pF"/>
+<part name="C13" library="mylib" deviceset="C_0805_PTH" device="" value="47pF"/>
 <part name="GND20" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND21" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -4348,6 +4412,15 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U$1" library="mylib" deviceset="RTL_SDR_CONN" device=""/>
 <part name="JH1" library="mylib" deviceset="4X_PIN_HEADER" device=""/>
+<part name="L7" library="164-11A06L" deviceset="164-11A06L" device="" value="56nH"/>
+<part name="L8" library="164-11A06L" deviceset="164-11A06L" device="" value="82nH"/>
+<part name="C14" library="mylib" deviceset="C_0805_PTH" device="" value="56pF"/>
+<part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND25" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="C9" library="mylib" deviceset="C_0805_PTH" device="" value="10nF"/>
+<part name="RF_OUT_VHF" library="mylib" deviceset="2X_SMD_PTH_PIN" device=""/>
+<part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="C10" library="mylib" deviceset="C_0805_PTH" device="" value="100pF"/>
 </parts>
 <sheets>
 <sheet>
@@ -4412,11 +4485,11 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 <instance part="GND7" gate="1" x="-68.58" y="30.226" smashed="yes">
 <attribute name="VALUE" x="-68.58" y="29.972" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="RF_IN" gate="G$1" x="-83.82" y="40.64" smashed="yes" rot="R180">
-<attribute name="NAME" x="-84.9" y="34.54" size="1.27" layer="95" rot="R180"/>
+<instance part="RF_IN" gate="G$1" x="-83.82" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="-84.9" y="39.62" size="1.27" layer="95" rot="R180"/>
 </instance>
-<instance part="GND8" gate="1" x="-78.74" y="30.226" smashed="yes">
-<attribute name="VALUE" x="-78.74" y="29.972" size="1.778" layer="96" align="top-center"/>
+<instance part="GND8" gate="1" x="-76.2" y="53.594" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-76.2" y="53.848" size="1.778" layer="96" rot="R180" align="top-center"/>
 </instance>
 <instance part="QG1" gate="G$1" x="142.24" y="43.18" smashed="yes" rot="R180">
 <attribute name="NAME" x="149.86" y="34.925" size="1.778" layer="95" rot="R180"/>
@@ -4470,49 +4543,38 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 <instance part="GND19" gate="1" x="164.846" y="-12.7" smashed="yes" rot="R270">
 <attribute name="VALUE" x="164.592" y="-12.7" size="1.778" layer="96" rot="R270" align="top-center"/>
 </instance>
-<instance part="C9" gate="G$1" x="22.86" y="96.52" smashed="yes" rot="R270">
-<attribute name="NAME" x="23.241" y="94.996" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="18.161" y="94.996" size="1.778" layer="96" rot="R270"/>
+<instance part="L3" gate="G$1" x="27.94" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.02" y="69.85" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="29.21" y="83.82" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C10" gate="G$1" x="7.62" y="88.9" smashed="yes">
-<attribute name="NAME" x="9.144" y="89.281" size="1.778" layer="95"/>
-<attribute name="VALUE" x="9.144" y="84.201" size="1.778" layer="96"/>
+<instance part="L4" gate="G$1" x="2.54" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="7.62" y="69.85" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="3.81" y="83.82" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND10" gate="1" x="7.62" y="66.04" smashed="yes">
-<attribute name="VALUE" x="7.62" y="65.786" size="1.778" layer="96" align="top-center"/>
+<instance part="L5" gate="G$1" x="-20.32" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="-15.24" y="69.85" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-19.05" y="83.82" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="L3" gate="L$1" x="-7.62" y="83.82" smashed="yes" rot="R180">
-<attribute name="NAME" x="-6.35" y="88.9" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="-11.43" y="88.9" size="1.778" layer="96" rot="R270"/>
+<instance part="C11" gate="G$1" x="15.24" y="96.52" smashed="yes" rot="R270">
+<attribute name="NAME" x="15.621" y="94.996" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="10.541" y="94.996" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="L4" gate="L$1" x="-33.02" y="83.82" smashed="yes" rot="R180">
-<attribute name="NAME" x="-31.75" y="88.9" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="-36.83" y="88.9" size="1.778" layer="96" rot="R270"/>
+<instance part="C12" gate="G$1" x="-7.62" y="96.52" smashed="yes" rot="R270">
+<attribute name="NAME" x="-7.239" y="94.996" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-12.319" y="94.996" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="L5" gate="L$1" x="-55.88" y="83.82" smashed="yes" rot="R180">
-<attribute name="NAME" x="-54.61" y="88.9" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="-59.69" y="88.9" size="1.778" layer="96" rot="R270"/>
+<instance part="C13" gate="G$1" x="-30.48" y="96.52" smashed="yes" rot="R270">
+<attribute name="NAME" x="-30.099" y="94.996" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-35.179" y="94.996" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C11" gate="G$1" x="-20.32" y="96.52" smashed="yes" rot="R270">
-<attribute name="NAME" x="-19.939" y="94.996" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="-25.019" y="94.996" size="1.778" layer="96" rot="R270"/>
+<instance part="GND20" gate="1" x="27.94" y="66.04" smashed="yes">
+<attribute name="VALUE" x="27.94" y="65.786" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C12" gate="G$1" x="-43.18" y="96.52" smashed="yes" rot="R270">
-<attribute name="NAME" x="-42.799" y="94.996" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="-47.879" y="94.996" size="1.778" layer="96" rot="R270"/>
+<instance part="GND21" gate="1" x="2.54" y="66.04" smashed="yes">
+<attribute name="VALUE" x="2.54" y="65.786" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C13" gate="G$1" x="-66.04" y="96.52" smashed="yes" rot="R270">
-<attribute name="NAME" x="-65.659" y="94.996" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="-70.739" y="94.996" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="GND20" gate="1" x="-7.62" y="66.04" smashed="yes">
-<attribute name="VALUE" x="-7.62" y="65.786" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="GND21" gate="1" x="-33.02" y="66.04" smashed="yes">
-<attribute name="VALUE" x="-33.02" y="65.786" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="GND22" gate="1" x="-55.88" y="66.04" smashed="yes">
-<attribute name="VALUE" x="-55.88" y="65.786" size="1.778" layer="96" align="top-center"/>
+<instance part="GND22" gate="1" x="-20.32" y="66.04" smashed="yes">
+<attribute name="VALUE" x="-20.32" y="65.786" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="RF_OUT" gate="G$1" x="-83.82" y="96.52" smashed="yes" rot="R180">
 <attribute name="NAME" x="-84.9" y="90.42" size="1.27" layer="95" rot="R180"/>
@@ -4551,6 +4613,38 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 </instance>
 <instance part="U$1" gate="G$1" x="76.2" y="132.08" smashed="yes"/>
 <instance part="JH1" gate="G$1" x="30.48" y="149.86" smashed="yes"/>
+<instance part="L7" gate="G$1" x="-40.64" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="-35.56" y="69.85" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-39.37" y="83.82" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="L8" gate="G$1" x="-60.96" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="-55.88" y="69.85" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-59.69" y="83.82" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C14" gate="G$1" x="-50.8" y="96.52" smashed="yes" rot="R270">
+<attribute name="NAME" x="-50.419" y="94.996" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-55.499" y="94.996" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND11" gate="1" x="-40.64" y="66.04" smashed="yes">
+<attribute name="VALUE" x="-40.64" y="65.786" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND25" gate="1" x="-60.96" y="66.04" smashed="yes">
+<attribute name="VALUE" x="-60.96" y="65.786" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="C9" gate="G$1" x="40.64" y="78.74" smashed="yes">
+<attribute name="NAME" x="42.164" y="79.121" size="1.778" layer="95"/>
+<attribute name="VALUE" x="42.164" y="74.041" size="1.778" layer="96"/>
+</instance>
+<instance part="RF_OUT_VHF" gate="G$1" x="-83.82" y="119.38" smashed="yes" rot="R180">
+<attribute name="NAME" x="-84.9" y="113.28" size="1.27" layer="95" rot="R180"/>
+</instance>
+<instance part="GND10" gate="1" x="-53.34" y="119.38" smashed="yes" rot="R90">
+<attribute name="VALUE" x="-53.086" y="119.38" size="1.778" layer="96" rot="R90" align="top-center"/>
+</instance>
+<instance part="C10" gate="G$1" x="-60.96" y="109.22" smashed="yes">
+<attribute name="NAME" x="-59.436" y="109.601" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-59.436" y="104.521" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4581,12 +4675,6 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="R1" gate="G$1" pin="E"/>
 <wire x1="-68.58" y1="32.766" x2="-68.58" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="RF_IN" gate="G$1" pin="PIN0"/>
-<wire x1="-78.74" y1="32.766" x2="-78.74" y2="37.64" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="37.64" x2="-81.36" y2="37.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="A"/>
@@ -4625,24 +4713,19 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 <wire x1="180.34" y1="-12.7" x2="167.386" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C10" gate="G$1" pin="2"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="7.62" y1="68.58" x2="7.62" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="L3" gate="L$1" pin="1"/>
+<pinref part="L3" gate="G$1" pin="1"/>
 <pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="-7.62" y1="68.58" x2="-7.62" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="68.58" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="L4" gate="L$1" pin="1"/>
+<pinref part="L4" gate="G$1" pin="1"/>
 <pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="-33.02" y1="68.58" x2="-33.02" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="68.58" x2="2.54" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="L5" gate="L$1" pin="1"/>
+<pinref part="L5" gate="G$1" pin="1"/>
 <pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="-55.88" y1="68.58" x2="-55.88" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="68.58" x2="-20.32" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND23" gate="1" pin="GND"/>
@@ -4690,6 +4773,27 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 <pinref part="C8" gate="G$1" pin="1"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="30.48" y1="175.26" x2="33.02" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="L7" gate="G$1" pin="1"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="-40.64" y1="68.58" x2="-40.64" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="L8" gate="G$1" pin="1"/>
+<pinref part="GND25" gate="1" pin="GND"/>
+<wire x1="-60.96" y1="68.58" x2="-60.96" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RF_OUT_VHF" gate="G$1" pin="PIN1"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="-81.36" y1="119.38" x2="-55.88" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RF_IN" gate="G$1" pin="PIN1"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="-81.36" y1="45.72" x2="-76.2" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="45.72" x2="-76.2" y2="51.054" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -4772,13 +4876,6 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 <wire x1="-68.58" y1="48.26" x2="-58.42" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="RF_IN" gate="G$1" pin="PIN1"/>
-<pinref part="R1" gate="G$1" pin="S"/>
-<wire x1="-81.36" y1="40.64" x2="-73.66" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="E"/>
@@ -4796,46 +4893,37 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="C10" gate="G$1" pin="1"/>
-<pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="91.44" x2="7.62" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="96.52" x2="17.78" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="L3" gate="L$1" pin="2"/>
-<wire x1="-7.62" y1="91.44" x2="-7.62" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="96.52" x2="7.62" y2="96.52" width="0.1524" layer="91"/>
-<junction x="7.62" y="96.52"/>
+<pinref part="L3" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="91.44" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="96.52" x2="25.4" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="-17.78" y1="96.52" x2="-7.62" y2="96.52" width="0.1524" layer="91"/>
-<junction x="-7.62" y="96.52"/>
+<wire x1="17.78" y1="96.52" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
+<junction x="27.94" y="96.52"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="81.28" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="96.52" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="C11" gate="G$1" pin="2"/>
 <pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="-25.4" y1="96.52" x2="-33.02" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="L4" gate="L$1" pin="2"/>
-<wire x1="-33.02" y1="96.52" x2="-40.64" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="91.44" x2="-33.02" y2="96.52" width="0.1524" layer="91"/>
-<junction x="-33.02" y="96.52"/>
+<wire x1="10.16" y1="96.52" x2="2.54" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="L4" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="96.52" x2="-5.08" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="91.44" x2="2.54" y2="96.52" width="0.1524" layer="91"/>
+<junction x="2.54" y="96.52"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>
 <pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="-48.26" y1="96.52" x2="-55.88" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="L5" gate="L$1" pin="2"/>
-<wire x1="-55.88" y1="96.52" x2="-63.5" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="91.44" x2="-55.88" y2="96.52" width="0.1524" layer="91"/>
-<junction x="-55.88" y="96.52"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="RF_OUT" gate="G$1" pin="PIN1"/>
-<pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="-81.36" y1="96.52" x2="-71.12" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="96.52" x2="-20.32" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="L5" gate="G$1" pin="2"/>
+<wire x1="-20.32" y1="96.52" x2="-27.94" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="91.44" x2="-20.32" y2="96.52" width="0.1524" layer="91"/>
+<junction x="-20.32" y="96.52"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -4843,15 +4931,6 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="G$1" pin="RF"/>
 <wire x1="25.4" y1="48.26" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="96.52" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="96.52" x2="40.64" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="IF"/>
-<wire x1="40.64" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -4887,6 +4966,55 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 <junction x="17.78" y="149.86"/>
 <pinref part="JH1" gate="G$1" pin="P$1"/>
 <wire x1="30.48" y1="149.86" x2="27.94" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="C14" gate="G$1" pin="2"/>
+<pinref part="L8" gate="G$1" pin="2"/>
+<wire x1="-60.96" y1="96.52" x2="-55.88" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="91.44" x2="-60.96" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="RF_OUT" gate="G$1" pin="PIN1"/>
+<wire x1="-81.36" y1="96.52" x2="-60.96" y2="96.52" width="0.1524" layer="91"/>
+<junction x="-60.96" y="96.52"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="-60.96" y1="104.14" x2="-60.96" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="C14" gate="G$1" pin="1"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="-48.26" y1="96.52" x2="-40.64" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="L7" gate="G$1" pin="2"/>
+<wire x1="-40.64" y1="96.52" x2="-35.56" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="91.44" x2="-40.64" y2="96.52" width="0.1524" layer="91"/>
+<junction x="-40.64" y="96.52"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="IF"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="50.8" x2="40.64" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="50.8" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="-60.96" y1="111.76" x2="-60.96" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="RF_OUT_VHF" gate="G$1" pin="PIN0"/>
+<wire x1="-81.36" y1="116.38" x2="-60.96" y2="116.38" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="116.38" x2="-60.96" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="RF_IN" gate="G$1" pin="PIN0"/>
+<pinref part="R1" gate="G$1" pin="S"/>
+<wire x1="-81.36" y1="42.72" x2="-73.66" y2="42.72" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="42.72" x2="-73.66" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
