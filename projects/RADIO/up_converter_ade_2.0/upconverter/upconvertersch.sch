@@ -387,6 +387,28 @@ MELF 0.10 W</description>
 <pad name="T$1" x="3" y="1.7" drill="1" diameter="2"/>
 <pad name="T$2" x="3" y="-1.7" drill="1" diameter="2" rot="R90"/>
 </package>
+<package name="RTL_SDR_OUT">
+<hole x="3.5" y="-2.5" drill="1.5"/>
+<hole x="20.5" y="-2.5" drill="1.5"/>
+<smd name="P$1" x="12" y="-6" dx="5" dy="2" layer="1" rot="R90"/>
+<smd name="P$2" x="7.5" y="-6" dx="5" dy="2.5" layer="1" rot="R90"/>
+<smd name="P$3" x="16.5" y="-6" dx="5" dy="2.5" layer="1" rot="R90"/>
+<wire x1="0" y1="0" x2="24" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-65" width="0.127" layer="21"/>
+<wire x1="24" y1="0" x2="24" y2="-65" width="0.127" layer="21"/>
+<wire x1="24" y1="-65" x2="18" y2="-65" width="0.127" layer="21"/>
+<wire x1="6" y1="-65" x2="0" y2="-65" width="0.127" layer="21"/>
+<wire x1="6" y1="-65" x2="6" y2="-84" width="0.127" layer="21"/>
+<wire x1="6" y1="-84" x2="18" y2="-84" width="0.127" layer="21"/>
+<wire x1="18" y1="-84" x2="18" y2="-65" width="0.127" layer="21"/>
+<wire x1="18" y1="-65" x2="6" y2="-65" width="0.127" layer="21"/>
+</package>
+<package name="4X_PIN_HEADER">
+<smd name="P$1" x="0" y="0" dx="4" dy="2" layer="1" rot="R90"/>
+<smd name="P$2" x="3.81" y="0" dx="4" dy="2" layer="1" rot="R90"/>
+<smd name="P$3" x="7.62" y="0" dx="4" dy="2" layer="1" rot="R90"/>
+<smd name="P$4" x="11.43" y="0" dx="4" dy="2" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -421,6 +443,21 @@ MELF 0.10 W</description>
 <wire x1="4" y1="-2" x2="0.08" y2="-2" width="0.254" layer="94"/>
 <wire x1="0.08" y1="-2" x2="0.08" y2="5" width="0.254" layer="94"/>
 <text x="1.08" y="6.1" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="RTL_SDR_CONN">
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94" curve="-208.072487"/>
+<pin name="P$1" x="-2.54" y="0" length="middle"/>
+<pin name="P$2" x="0" y="-7.62" length="middle" rot="R90"/>
+</symbol>
+<symbol name="4X_PIN_HEADER">
+<pin name="P$1" x="0" y="0" length="middle"/>
+<pin name="P$2" x="0" y="-2.54" length="middle"/>
+<pin name="P$3" x="0" y="-5.08" length="middle"/>
+<pin name="P$4" x="0" y="-7.62" length="middle"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -465,6 +502,40 @@ MELF 0.10 W</description>
 <connects>
 <connect gate="G$1" pin="PIN0" pad="P$1 T$1"/>
 <connect gate="G$1" pin="PIN1" pad="P$2 T$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RTL_SDR_CONN">
+<gates>
+<gate name="G$1" symbol="RTL_SDR_CONN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RTL_SDR_OUT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2 P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="4X_PIN_HEADER" prefix="JH" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="4X_PIN_HEADER" x="-2.54" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="4X_PIN_HEADER">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4125,69 +4196,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/ADE-1 .pdf"&g
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Connectors">
-<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
-This library contains electrically-functional connectors. 
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="USB-SOLDER-PADS">
-<smd name="D-" x="0" y="0.889" dx="3" dy="0.9" layer="1" cream="no"/>
-<smd name="VBUS" x="0" y="2.667" dx="3" dy="0.9" layer="1" cream="no"/>
-<smd name="D+" x="0" y="-0.889" dx="3" dy="0.9" layer="1" cream="no"/>
-<smd name="GND" x="0" y="-2.667" dx="3" dy="0.9" layer="1" cream="no"/>
-</package>
-</packages>
-<symbols>
-<symbol name="CONN_04">
-<description>&lt;h3&gt;4 Pin Connection&lt;/h3&gt;</description>
-<wire x1="1.27" y1="-5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="0" y2="2.54" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="0" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="1.27" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="7.62" x2="1.27" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="5.08" x2="0" y2="5.08" width="0.6096" layer="94"/>
-<text x="-5.08" y="-7.366" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<text x="-5.08" y="8.128" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<pin name="1" x="5.08" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="USB_SOLDER_PADS" prefix="JP">
-<description>Solder pad access to USB pins. Helpful to expose on PCBs so user can attach external USB connector if necessary.</description>
-<gates>
-<gate name="JP1" symbol="CONN_04" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="USB-SOLDER-PADS">
-<connects>
-<connect gate="JP1" pin="1" pad="VBUS"/>
-<connect gate="JP1" pin="2" pad="D-"/>
-<connect gate="JP1" pin="3" pad="D+"/>
-<connect gate="JP1" pin="4" pad="GND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="USB-A-S-S-B-TH">
 <description>&lt;Samtec USB-A Series, Right Angle Through Hole, Version 2.0 Type A USB Connector, Receptacle&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
@@ -4335,10 +4343,11 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND24" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="JP1" library="SparkFun-Connectors" deviceset="USB_SOLDER_PADS" device=""/>
 <part name="L6" library="mylib" deviceset="L_0805_PTH" device="" value="220uH"/>
 <part name="C8" library="mylib" deviceset="C_0805_PTH" device="" value="100nF"/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="U$1" library="mylib" deviceset="RTL_SDR_CONN" device=""/>
+<part name="JH1" library="mylib" deviceset="4X_PIN_HEADER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4529,10 +4538,6 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 <instance part="GND24" gate="1" x="-22.86" y="139.7" smashed="yes">
 <attribute name="VALUE" x="-22.86" y="139.446" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="JP1" gate="JP1" x="33.02" y="147.32" smashed="yes" rot="R180">
-<attribute name="VALUE" x="38.1" y="154.686" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="38.1" y="139.192" size="1.778" layer="95" font="vector" rot="R180"/>
-</instance>
 <instance part="L6" gate="L$1" x="17.78" y="162.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="19.05" y="167.64" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="13.97" y="167.64" size="1.778" layer="96" rot="R270"/>
@@ -4544,6 +4549,8 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 <instance part="GND9" gate="1" x="35.56" y="175.26" smashed="yes" rot="R90">
 <attribute name="VALUE" x="35.814" y="175.26" size="1.778" layer="96" rot="R90" align="top-center"/>
 </instance>
+<instance part="U$1" gate="G$1" x="76.2" y="132.08" smashed="yes"/>
+<instance part="JH1" gate="G$1" x="30.48" y="149.86" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -4664,9 +4671,10 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 <pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="17.78" y1="139.7" x2="17.78" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="142.24" x2="7.62" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="JP1" pin="4"/>
 <wire x1="27.94" y1="142.24" x2="17.78" y2="142.24" width="0.1524" layer="91"/>
 <junction x="17.78" y="142.24"/>
+<pinref part="JH1" gate="G$1" pin="P$4"/>
+<wire x1="30.48" y1="142.24" x2="27.94" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND24" gate="1" pin="GND"/>
@@ -4856,26 +4864,29 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/usb-a-s-x-x-th-x-mkt.pdf
 <net name="N$4" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
-<pinref part="JP1" gate="JP1" pin="2"/>
 <wire x1="7.62" y1="147.32" x2="27.94" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="JH1" gate="G$1" pin="P$2"/>
+<wire x1="30.48" y1="147.32" x2="27.94" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
-<pinref part="JP1" gate="JP1" pin="3"/>
 <wire x1="7.62" y1="144.78" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="JH1" gate="G$1" pin="P$3"/>
+<wire x1="30.48" y1="144.78" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="149.86" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="JP1" pin="1"/>
 <wire x1="27.94" y1="149.86" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="L6" gate="L$1" pin="1"/>
 <wire x1="17.78" y1="154.94" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
 <junction x="17.78" y="149.86"/>
+<pinref part="JH1" gate="G$1" pin="P$1"/>
+<wire x1="30.48" y1="149.86" x2="27.94" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
