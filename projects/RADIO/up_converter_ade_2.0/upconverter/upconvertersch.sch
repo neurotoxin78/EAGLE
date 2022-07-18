@@ -4060,7 +4060,7 @@ grid 22.86 mm, diameter 9 mm</description>
 <rectangle x1="-9.779" y1="-0.381" x2="-8.89" y2="0.381" layer="21"/>
 <rectangle x1="8.89" y1="-0.381" x2="9.779" y2="0.381" layer="21"/>
 </package>
-<package name="E3,5-10" urn="urn:adsk.eagle:footprint:22854/1">
+<package name="E3,5-10" urn="urn:adsk.eagle:footprint:22854/1" locally_modified="yes">
 <description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
 grid 3.5 mm, diameter 10 mm</description>
 <wire x1="-3.429" y1="1.143" x2="-2.667" y2="1.143" width="0.1524" layer="21"/>
@@ -4073,8 +4073,8 @@ grid 3.5 mm, diameter 10 mm</description>
 <wire x1="-0.762" y1="1.27" x2="-0.762" y2="0" width="0.1524" layer="51"/>
 <wire x1="0.635" y1="0" x2="1.651" y2="0" width="0.1524" layer="51"/>
 <circle x="0" y="0" radius="5.08" width="0.1524" layer="21"/>
-<pad name="-" x="1.778" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
-<pad name="+" x="-1.778" y="0" drill="0.8128" diameter="1.6002"/>
+<pad name="-" x="1.778" y="0" drill="1" diameter="2" shape="octagon"/>
+<pad name="+" x="-1.778" y="0" drill="1" diameter="2"/>
 <text x="4.064" y="3.429" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.302" y="-3.048" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="0.254" y1="-1.27" x2="0.762" y2="1.27" layer="51"/>
@@ -13093,13 +13093,13 @@ Source: &lt;a href="https://www.coilcraft.com/getmedia/31c16ea6-718f-435e-a089-e
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C1" library="mylib" deviceset="C_0805_PTH" device="" value="100nF"/>
-<part name="C2" library="mylib" deviceset="C_0805_PTH" device="" value="100pF"/>
+<part name="C2" library="mylib" deviceset="C_0805_PTH" device="" value="22pF"/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="L1" library="mylib" deviceset="L_0805_PTH" device=""/>
 <part name="L2" library="mylib" deviceset="L_0805_PTH" device=""/>
-<part name="C3" library="mylib" deviceset="C_0805_PTH" device="" value="200pF"/>
+<part name="C3" library="mylib" deviceset="C_0805_PTH" device="" value="150pF"/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C4" library="mylib" deviceset="C_0805_PTH" device="" value="100pF"/>
+<part name="C4" library="mylib" deviceset="C_0805_PTH" device="" value="150pF"/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C5" library="mylib" deviceset="C_0805_PTH" device="" value="100nF"/>
 <part name="R1" library="rcl" deviceset="R-TRIMM" device="64W" package3d_urn="urn:adsk.eagle:package:23748/1"/>

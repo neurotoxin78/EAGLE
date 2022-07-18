@@ -265,6 +265,7 @@ grid 5.08 mm, diameter 5 mm</description>
 <wire x1="6" y1="-84" x2="18" y2="-84" width="0.127" layer="22"/>
 <wire x1="18" y1="-84" x2="18" y2="-65" width="0.127" layer="22"/>
 <wire x1="18" y1="-65" x2="6" y2="-65" width="0.127" layer="22"/>
+<text x="15.24" y="-17.78" size="6.4516" layer="22" rot="MR270">RTL-SDR</text>
 </package>
 <package name="5PIN_TRANSFORMER">
 <pad name="P$1" x="1.5" y="1.5" drill="1" diameter="2.5" shape="octagon"/>
@@ -314,8 +315,6 @@ grid 5.08 mm, diameter 5 mm</description>
 <wire x1="-1.27" y1="1.42" x2="13.77" y2="1.42" width="0.127" layer="21"/>
 <wire x1="13.77" y1="1.42" x2="13.77" y2="-19.2" width="0.127" layer="21"/>
 <wire x1="13.77" y1="-19.2" x2="-1.27" y2="-19.2" width="0.127" layer="21"/>
-<hole x="3.108" y="-0.55" drill="2"/>
-<hole x="9.492" y="-17.45" drill="2"/>
 <wire x1="3.8" y1="-6.8" x2="2.8" y2="-6.8" width="0.5" layer="21"/>
 <wire x1="3.8" y1="-7.4" x2="2.8" y2="-7.4" width="0.5" layer="21"/>
 <wire x1="3.8" y1="-8" x2="2.8" y2="-8" width="0.5" layer="21"/>
