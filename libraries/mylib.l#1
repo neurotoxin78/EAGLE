@@ -856,11 +856,15 @@ grid 5.08 mm, diameter 5 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHD_X_1">
+<deviceset name="PINHD_X_1" prefix="PIN_">
 <gates>
+<gate name="G$1" symbol="PINHD1" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="PINHD1">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

@@ -315,8 +315,6 @@ grid 5.08 mm, diameter 5 mm</description>
 <wire x1="-1.27" y1="1.42" x2="13.77" y2="1.42" width="0.127" layer="21"/>
 <wire x1="13.77" y1="1.42" x2="13.77" y2="-19.2" width="0.127" layer="21"/>
 <wire x1="13.77" y1="-19.2" x2="-1.27" y2="-19.2" width="0.127" layer="21"/>
-<hole x="3.108" y="-0.55" drill="2"/>
-<hole x="9.492" y="-17.45" drill="2"/>
 <wire x1="3.8" y1="-6.8" x2="2.8" y2="-6.8" width="0.5" layer="21"/>
 <wire x1="3.8" y1="-7.4" x2="2.8" y2="-7.4" width="0.5" layer="21"/>
 <wire x1="3.8" y1="-8" x2="2.8" y2="-8" width="0.5" layer="21"/>
