@@ -466,7 +466,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="23.95" y="22.28" size="1.27" layer="25"/>
 <attribute name="VALUE" x="23.95" y="18.47" size="1.27" layer="27"/>
 </element>
-<element name="INPUT" library="mylib" package="2X_SMD_PTH" value="2X_SMD_PTH_PIN" x="3.22" y="13.21" smashed="yes"/>
+<element name="INPUT" library="mylib" package="2X_SMD_PTH" value="INPUT" x="3.22" y="13.21" smashed="yes"/>
 <element name="L1" library="mylib" package="C0805" value="330nH" x="11.5" y="5.9" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.77" y="7.17" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="8.96" y="7.17" size="1.27" layer="27" rot="R270"/>
@@ -514,12 +514,12 @@ design rules under a new name.</description>
 <contactref element="L5" pad="1"/>
 <contactref element="C5" pad="1"/>
 <contactref element="C1" pad="1"/>
-<contactref element="INPUT" pad="P$2"/>
-<contactref element="INPUT" pad="T$2"/>
+<contactref element="INPUT" pad="T$1"/>
+<contactref element="INPUT" pad="P$1"/>
 <wire x1="11.493" y1="17.01" x2="11.463" y2="21.01" width="0" layer="19" extent="1-1"/>
 <wire x1="11.52" y1="12.807" x2="11.493" y2="17.01" width="0" layer="19" extent="1-1"/>
-<wire x1="6.22" y1="11.51" x2="11.52" y2="12.807" width="0" layer="19" extent="1-1"/>
-<wire x1="3.22" y1="11.51" x2="6.22" y2="11.51" width="0" layer="19" extent="1-1"/>
+<wire x1="6.22" y1="14.91" x2="11.493" y2="17.01" width="0" layer="19" extent="1-1"/>
+<wire x1="3.22" y1="14.91" x2="6.22" y2="14.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="C6" pad="2"/>
@@ -568,8 +568,6 @@ design rules under a new name.</description>
 <contactref element="L2" pad="2"/>
 <contactref element="L3" pad="2"/>
 <contactref element="L4" pad="2"/>
-<contactref element="INPUT" pad="P$1"/>
-<contactref element="INPUT" pad="T$1"/>
 <contactref element="OUTPUT" pad="P$1"/>
 <contactref element="OUTPUT" pad="T$1"/>
 <contactref element="H1" pad="B3,0"/>
@@ -588,6 +586,10 @@ design rules under a new name.</description>
 <vertex x="43.5" y="-3"/>
 <vertex x="43.5" y="27.5"/>
 </polygon>
+<contactref element="INPUT" pad="P$2"/>
+<contactref element="INPUT" pad="T$2"/>
+<wire x1="3.22" y1="11.51" x2="6.22" y2="11.51" width="0" layer="19" extent="1-1"/>
+<wire x1="4.5" y1="4.5" x2="3.22" y2="11.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="L5" pad="2"/>
