@@ -5594,8 +5594,8 @@ grid 2.54 mm</description>
 <attribute name="VALUE" x="274.32" y="47.625" size="1.778" layer="96"/>
 </instance>
 <instance part="R15" gate="R$1" x="251.46" y="25.4" smashed="yes" rot="R180" grouprefs="MIXER">
-<attribute name="NAME" x="267.97" y="23.9014" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="267.97" y="28.702" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="252.73" y="23.9014" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="252.73" y="28.702" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R14" gate="R$1" x="251.46" y="83.82" smashed="yes" rot="R180" grouprefs="MIXER">
 <attribute name="NAME" x="252.73" y="82.3214" size="1.778" layer="95" rot="R180"/>

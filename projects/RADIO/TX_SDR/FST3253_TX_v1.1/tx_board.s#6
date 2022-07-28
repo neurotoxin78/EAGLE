@@ -5791,8 +5791,8 @@ grid 2.54 mm</description>
 <instance part="GND18" gate="1" x="195.58" y="20.32" smashed="yes">
 <attribute name="VALUE" x="195.58" y="20.066" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND19" gate="1" x="195.58" y="83.82" smashed="yes">
-<attribute name="VALUE" x="195.58" y="83.566" size="1.778" layer="96" align="top-center"/>
+<instance part="GND19" gate="1" x="195.58" y="96.52" smashed="yes" rot="R180">
+<attribute name="VALUE" x="195.58" y="96.774" size="1.778" layer="96" rot="R180" align="top-center"/>
 </instance>
 <instance part="Q1" gate="1" x="185.42" y="68.58" smashed="yes" rot="R270">
 <attribute name="NAME" x="187.96" y="60.96" size="1.778" layer="95"/>
@@ -5859,9 +5859,9 @@ grid 2.54 mm</description>
 <wire x1="223.52" y1="88.9" x2="205.74" y2="88.9" width="0.1524" layer="91" grouprefs="MIXER"/>
 <label x="203.2" y="88.9" size="1.778" layer="95" rot="R180" grouprefs="MIXER"/>
 <pinref part="U$1" gate="G$1" pin="S0"/>
-<pinref part="CLK1" gate="G$1" pin="PIN1"/>
-<wire x1="192.96" y1="91.44" x2="205.74" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="91.44" x2="205.74" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="CLK1" gate="G$1" pin="PIN0"/>
+<wire x1="192.96" y1="88.44" x2="205.74" y2="88.44" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="88.44" x2="205.74" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="0" class="0">
@@ -6152,10 +6152,10 @@ grid 2.54 mm</description>
 <wire x1="-30.48" y1="46.736" x2="-33.862" y2="46.736" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CLK1" gate="G$1" pin="PIN0"/>
+<pinref part="CLK1" gate="G$1" pin="PIN1"/>
 <pinref part="GND19" gate="1" pin="GND"/>
-<wire x1="192.96" y1="88.44" x2="195.58" y2="88.44" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="88.44" x2="195.58" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="192.96" y1="91.44" x2="195.58" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="91.44" x2="195.58" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
