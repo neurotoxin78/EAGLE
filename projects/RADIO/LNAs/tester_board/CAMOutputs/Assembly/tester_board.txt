@@ -1,0 +1,6 @@
+Partlist exported from C:/Users/neuro/Documents/EAGLE/projects/RADIO/LNAs/tester_board/tester_board.sch at 08.08.2022 20:22
+
+Qty Value                Device               Package                  Parts          Description                                           MF                 MPN          OC_FARNELL OC_NEWARK POPULARITY
+1                        W237-102             W237-102                 X2             WAGO SCREW CLAMP                                                         237-102      unknown    70K9898   32        
+4   MOUNT-PAD-ROUND3.0   MOUNT-PAD-ROUND3.0   3,0-PAD                  H1, H2, H3, H4 MOUNTING PAD, round                                                                                        17        
+1   SMA-142-0711-821/826 SMA-142-0711-821/826 J502-ND-142-0711-821/826 X1             SMA 50 Ohm End Launch Jack Receptacle - Round Contact JOHNSON COMPONENTS 142-0711-821 1019328    16F3627   0         

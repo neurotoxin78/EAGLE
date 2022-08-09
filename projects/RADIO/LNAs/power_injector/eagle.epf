@@ -291,6 +291,7 @@ UsedLibrary="C:/Users/neuro/Documents/EAGLE/libraries/linear.lbr"
 UsedLibrary="C:/Users/neuro/Documents/EAGLE/libraries/mylib.lbr"
 UsedLibrary="C:/Users/neuro/Documents/EAGLE/libraries/rcl.lbr"
 UsedLibrary="C:/Users/neuro/Documents/EAGLE/libraries/SparkFun-Eagle-Libraries-main/SparkFun-PowerSymbols.lbr"
+UsedLibrary="C:/Users/neuro/Documents/EAGLE/libraries/SparkFun-Eagle-Libraries-main/SparkFun-Connectors.lbr"
 
 [Win_1]
 Type="Control Panel"
