@@ -532,8 +532,8 @@ design rules under a new name.</description>
 <element name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,0-PAD" package3d_urn="urn:adsk.eagle:package:14280/1" value="MOUNT-PAD-ROUND3.0" x="4.5" y="25.5" locked="yes" smashed="yes">
 <attribute name="POPULARITY" value="17" x="4.5" y="25.5" locked="yes" size="1.778" layer="27" display="off"/>
 </element>
-<element name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,0-PAD" package3d_urn="urn:adsk.eagle:package:14280/1" value="MOUNT-PAD-ROUND3.0" x="15.24" y="25.4" locked="yes" smashed="yes">
-<attribute name="POPULARITY" value="17" x="15.24" y="25.4" locked="yes" size="1.778" layer="27" display="off"/>
+<element name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,0-PAD" package3d_urn="urn:adsk.eagle:package:14280/1" value="MOUNT-PAD-ROUND3.0" x="15.5" y="25.5" locked="yes" smashed="yes">
+<attribute name="POPULARITY" value="17" x="15.5" y="25.5" locked="yes" size="1.778" layer="27" display="off"/>
 </element>
 <element name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,0-PAD" package3d_urn="urn:adsk.eagle:package:14280/1" value="MOUNT-PAD-ROUND3.0" x="15.5" y="4.5" locked="yes" smashed="yes">
 <attribute name="POPULARITY" value="17" x="15.5" y="4.5" locked="yes" size="1.778" layer="27" display="off"/>

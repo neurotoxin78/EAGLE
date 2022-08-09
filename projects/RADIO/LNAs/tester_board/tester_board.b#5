@@ -532,6 +532,12 @@ design rules under a new name.</description>
 <element name="H2" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,0-PAD" package3d_urn="urn:adsk.eagle:package:14280/1" value="MOUNT-PAD-ROUND3.0" x="4.5" y="25.5" smashed="yes">
 <attribute name="POPULARITY" value="17" x="4.5" y="25.5" size="1.778" layer="27" display="off"/>
 </element>
+<element name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,0-PAD" package3d_urn="urn:adsk.eagle:package:14280/1" value="MOUNT-PAD-ROUND3.0" x="-12.7" y="3.81" smashed="yes">
+<attribute name="POPULARITY" value="17" x="-12.7" y="3.81" size="1.778" layer="27" display="off"/>
+</element>
+<element name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,0-PAD" package3d_urn="urn:adsk.eagle:package:14280/1" value="MOUNT-PAD-ROUND3.0" x="-21.59" y="3.81" smashed="yes">
+<attribute name="POPULARITY" value="17" x="-21.59" y="3.81" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -556,8 +562,12 @@ design rules under a new name.</description>
 </polygon>
 <contactref element="H1" pad="B3,0"/>
 <contactref element="H2" pad="B3,0"/>
+<contactref element="H3" pad="B3,0"/>
+<contactref element="H4" pad="B3,0"/>
 <wire x1="3.3854" y1="18.4946" x2="3.3854" y2="18.4946" width="0" layer="19" extent="1-16"/>
 <wire x1="3.3854" y1="11.5054" x2="3.3854" y2="11.5054" width="0" layer="19" extent="1-16"/>
+<wire x1="-12.7" y1="3.81" x2="4.5" y2="4.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.59" y1="3.81" x2="-12.7" y2="3.81" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
